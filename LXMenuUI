@@ -1,0 +1,2737 @@
+-- // GUI TO LUA \\ --
+
+-- // INSTANCES: 354 | SCRIPTS: 0 | MODULES: 0 \\ --
+
+local UI = {}
+
+-- // StarterGui.UniqueMenu_V-2 \\ --
+UI["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"))
+UI["1"]["Name"] = [[UniqueMenu_V-2]]
+UI["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
+
+-- // StarterGui.UniqueMenu_V-2.Frame \\ --
+UI["2"] = Instance.new("Frame", UI["1"])
+UI["2"]["BorderSizePixel"] = 0
+UI["2"]["BackgroundColor3"] = Color3.fromRGB(10, 20, 23)
+UI["2"]["ClipsDescendants"] = true
+UI["2"]["Size"] = UDim2.new(0.19291, 0, 0.53142, 0)
+UI["2"]["Position"] = UDim2.new(0.42614, 0, 0.23425, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.UICorner \\ --
+UI["3"] = Instance.new("UICorner", UI["2"])
+UI["3"]["CornerRadius"] = UDim.new(0, 13)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.UIAspectRatioConstraint \\ --
+UI["4"] = Instance.new("UIAspectRatioConstraint", UI["2"])
+UI["4"]["AspectRatio"] = 0.59431
+
+-- // StarterGui.UniqueMenu_V-2.Frame.dragger \\ --
+UI["5"] = Instance.new("Frame", UI["2"])
+UI["5"]["BorderSizePixel"] = 0
+UI["5"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["5"]["Size"] = UDim2.new(0, 397, 0, 44)
+UI["5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["5"]["Name"] = [[dragger]]
+UI["5"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages \\ --
+UI["6"] = Instance.new("Frame", UI["2"])
+UI["6"]["BorderSizePixel"] = 0
+UI["6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["6"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["6"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6"]["Name"] = [[Pages]]
+UI["6"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.UIPageLayout \\ --
+UI["7"] = Instance.new("UIPageLayout", UI["6"])
+UI["7"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center
+UI["7"]["VerticalAlignment"] = Enum.VerticalAlignment.Center
+UI["7"]["SortOrder"] = Enum.SortOrder.LayoutOrder
+UI["7"]["Padding"] = UDim.new(0.01, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home \\ --
+UI["8"] = Instance.new("Frame", UI["6"])
+UI["8"]["BorderSizePixel"] = 0
+UI["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8"]["Name"] = [[Home]]
+UI["8"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Home \\ --
+UI["9"] = Instance.new("Frame", UI["8"])
+UI["9"]["BorderSizePixel"] = 0
+UI["9"]["Size"] = UDim2.new(0.50378, 0, 0.3997, 0)
+UI["9"]["Position"] = UDim2.new(0.24937, 0, 0.08084, 0)
+UI["9"]["Name"] = [[Home]]
+UI["9"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Home.Picture \\ --
+UI["a"] = Instance.new("ImageLabel", UI["9"])
+UI["a"]["BorderSizePixel"] = 0
+UI["a"]["Image"] = [[https://www.roblox.com/headshot-thumbnail/image?userId=937469994&width=180&height=180&format=png]]
+UI["a"]["Size"] = UDim2.new(1, 0, 0.74906, 0)
+UI["a"]["BackgroundTransparency"] = 1
+UI["a"]["Name"] = [[Picture]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Home.Picture.UIStroke \\ --
+UI["b"] = Instance.new("UIStroke", UI["a"])
+UI["b"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Home.Picture.UIStroke.UIGradient \\ --
+UI["c"] = Instance.new("UIGradient", UI["b"])
+UI["c"]["Rotation"] = 90
+UI["c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(103, 103, 103))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Home.Picture.UICorner \\ --
+UI["d"] = Instance.new("UICorner", UI["a"])
+UI["d"]["CornerRadius"] = UDim.new(0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Home.DisplayName \\ --
+UI["e"] = Instance.new("TextLabel", UI["9"])
+UI["e"]["TextWrapped"] = true
+UI["e"]["BorderSizePixel"] = 0
+UI["e"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["e"]["TextScaled"] = true
+UI["e"]["TextSize"] = 20
+UI["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["e"]["TextColor3"] = Color3.fromRGB(241, 241, 241)
+UI["e"]["BackgroundTransparency"] = 1
+UI["e"]["Size"] = UDim2.new(0.28, 0, 0.07491, 0)
+UI["e"]["Text"] = [[NZXT]]
+UI["e"]["Name"] = [[DisplayName]]
+UI["e"]["Position"] = UDim2.new(0.355, 0, 0.82772, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Home.PlrName \\ --
+UI["f"] = Instance.new("TextLabel", UI["9"])
+UI["f"]["TextWrapped"] = true
+UI["f"]["BorderSizePixel"] = 0
+UI["f"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["f"]["TextScaled"] = true
+UI["f"]["TextSize"] = 18
+UI["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["f"]["TextColor3"] = Color3.fromRGB(100, 100, 100)
+UI["f"]["BackgroundTransparency"] = 1
+UI["f"]["Size"] = UDim2.new(0.52, 0, 0.06742, 0)
+UI["f"]["Text"] = [[@Joe_0815]]
+UI["f"]["Name"] = [[PlrName]]
+UI["f"]["Position"] = UDim2.new(0.235, 0, 0.91386, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods \\ --
+UI["10"] = Instance.new("Frame", UI["8"])
+UI["10"]["BorderSizePixel"] = 0
+UI["10"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["10"]["Size"] = UDim2.new(0.88665, 0, 0.25449, 0)
+UI["10"]["Position"] = UDim2.new(0.04534, 0, 0.59731, 0)
+UI["10"]["Name"] = [[Mods]]
+UI["10"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.SpeedMod \\ --
+UI["11"] = Instance.new("Frame", UI["10"])
+UI["11"]["BorderSizePixel"] = 0
+UI["11"]["Size"] = UDim2.new(1, 0, 0.29412, 0)
+UI["11"]["Name"] = [[SpeedMod]]
+UI["11"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.SpeedMod.Bar \\ --
+UI["12"] = Instance.new("Frame", UI["11"])
+UI["12"]["BorderSizePixel"] = 0
+UI["12"]["BackgroundColor3"] = Color3.fromRGB(16, 17, 19)
+UI["12"]["Size"] = UDim2.new(0.73295, 0, 1, 0)
+UI["12"]["Name"] = [[Bar]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.SpeedMod.Bar.Frame 1 \\ --
+UI["13"] = Instance.new("Frame", UI["12"])
+UI["13"]["BorderSizePixel"] = 0
+UI["13"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["13"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["13"]["Name"] = [[Frame 1]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.SpeedMod.Bar.Frame 1.UIGradient \\ --
+UI["14"] = Instance.new("UIGradient", UI["13"])
+UI["14"]["Rotation"] = 359.36499
+UI["14"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.SpeedMod.Bar.Frame 1.UICorner \\ --
+UI["15"] = Instance.new("UICorner", UI["13"])
+UI["15"]["CornerRadius"] = UDim.new(0.166, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.SpeedMod.Bar.Frame 1.WalkSpeed \\ --
+UI["16"] = Instance.new("NumberValue", UI["13"])
+UI["16"]["Name"] = [[WalkSpeed]]
+UI["16"]["Value"] = 16
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.SpeedMod.Bar.UIStroke \\ --
+UI["17"] = Instance.new("UIStroke", UI["12"])
+UI["17"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.SpeedMod.Bar.UIStroke.UIGradient \\ --
+UI["18"] = Instance.new("UIGradient", UI["17"])
+UI["18"]["Rotation"] = 90
+UI["18"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(103, 103, 103))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.SpeedMod.Bar.UICorner \\ --
+UI["19"] = Instance.new("UICorner", UI["12"])
+UI["19"]["CornerRadius"] = UDim.new(0.166, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.SpeedMod.Bar.Speed \\ --
+UI["1a"] = Instance.new("TextLabel", UI["12"])
+UI["1a"]["TextWrapped"] = true
+UI["1a"]["BorderSizePixel"] = 0
+UI["1a"]["TextScaled"] = true
+UI["1a"]["TextSize"] = 15
+UI["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["1a"]["TextColor3"] = Color3.fromRGB(241, 241, 241)
+UI["1a"]["BackgroundTransparency"] = 1
+UI["1a"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+UI["1a"]["Size"] = UDim2.new(0.156, 0, 0.35, 0)
+UI["1a"]["Text"] = [[Speed]]
+UI["1a"]["Name"] = [[Speed]]
+UI["1a"]["Position"] = UDim2.new(0.5, 0, 0.5, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.SpeedMod.Frame TextButton \\ --
+UI["1b"] = Instance.new("Frame", UI["11"])
+UI["1b"]["BorderSizePixel"] = 0
+UI["1b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1b"]["Size"] = UDim2.new(0.22159, 0, 1, 0)
+UI["1b"]["Position"] = UDim2.new(0.77841, 0, 0, 0)
+UI["1b"]["Name"] = [[Frame TextButton]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.SpeedMod.Frame TextButton.UIStroke \\ --
+UI["1c"] = Instance.new("UIStroke", UI["1b"])
+UI["1c"]["Thickness"] = 2
+UI["1c"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.SpeedMod.Frame TextButton.UIStroke.UIGradient \\ --
+UI["1d"] = Instance.new("UIGradient", UI["1c"])
+UI["1d"]["Rotation"] = 359.36499
+UI["1d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.SpeedMod.Frame TextButton.UICorner \\ --
+UI["1e"] = Instance.new("UICorner", UI["1b"])
+UI["1e"]["CornerRadius"] = UDim.new(0.166, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.SpeedMod.Frame TextButton.x1i \\ --
+UI["1f"] = Instance.new("TextBox", UI["1b"])
+UI["1f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["1f"]["PlaceholderColor3"] = Color3.fromRGB(231, 231, 231)
+UI["1f"]["BorderSizePixel"] = 0
+UI["1f"]["TextWrapped"] = true
+UI["1f"]["TextSize"] = 14
+UI["1f"]["Name"] = [[x1i]]
+UI["1f"]["TextScaled"] = true
+UI["1f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["1f"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+UI["1f"]["PlaceholderText"] = [[Speed]]
+UI["1f"]["Size"] = UDim2.new(0.705, 0, 0.32, 0)
+UI["1f"]["Position"] = UDim2.new(0.5, 0, 0.5, 0)
+UI["1f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["1f"]["Text"] = [[16 st/s]]
+UI["1f"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.JumpMod \\ --
+UI["20"] = Instance.new("Frame", UI["10"])
+UI["20"]["BorderSizePixel"] = 0
+UI["20"]["Size"] = UDim2.new(1, 0, 0.29412, 0)
+UI["20"]["Position"] = UDim2.new(0, 0, 0.70588, 0)
+UI["20"]["Name"] = [[JumpMod]]
+UI["20"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.JumpMod.Bar \\ --
+UI["21"] = Instance.new("Frame", UI["20"])
+UI["21"]["BorderSizePixel"] = 0
+UI["21"]["BackgroundColor3"] = Color3.fromRGB(16, 17, 19)
+UI["21"]["Size"] = UDim2.new(0.73295, 0, 1, 0)
+UI["21"]["Name"] = [[Bar]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.JumpMod.Bar.Frame 1 \\ --
+UI["22"] = Instance.new("Frame", UI["21"])
+UI["22"]["BorderSizePixel"] = 0
+UI["22"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["22"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["22"]["Name"] = [[Frame 1]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.JumpMod.Bar.Frame 1.UIGradient \\ --
+UI["23"] = Instance.new("UIGradient", UI["22"])
+UI["23"]["Rotation"] = 359.36499
+UI["23"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.JumpMod.Bar.Frame 1.UICorner \\ --
+UI["24"] = Instance.new("UICorner", UI["22"])
+UI["24"]["CornerRadius"] = UDim.new(0.166, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.JumpMod.Bar.Frame 1.JumpHeight \\ --
+UI["25"] = Instance.new("NumberValue", UI["22"])
+UI["25"]["Name"] = [[JumpHeight]]
+UI["25"]["Value"] = 7.2
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.JumpMod.Bar.UIStroke \\ --
+UI["26"] = Instance.new("UIStroke", UI["21"])
+UI["26"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.JumpMod.Bar.UIStroke.UIGradient \\ --
+UI["27"] = Instance.new("UIGradient", UI["26"])
+UI["27"]["Rotation"] = 90
+UI["27"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(103, 103, 103))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.JumpMod.Bar.UICorner \\ --
+UI["28"] = Instance.new("UICorner", UI["21"])
+UI["28"]["CornerRadius"] = UDim.new(0.166, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.JumpMod.Bar.Jump Height \\ --
+UI["29"] = Instance.new("TextLabel", UI["21"])
+UI["29"]["TextWrapped"] = true
+UI["29"]["BorderSizePixel"] = 0
+UI["29"]["TextScaled"] = true
+UI["29"]["TextSize"] = 15
+UI["29"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["29"]["TextColor3"] = Color3.fromRGB(241, 241, 241)
+UI["29"]["BackgroundTransparency"] = 1
+UI["29"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+UI["29"]["Size"] = UDim2.new(0.324, 0, 0.35, 0)
+UI["29"]["Text"] = [[Jump Height]]
+UI["29"]["Name"] = [[Jump Height]]
+UI["29"]["Position"] = UDim2.new(0.5, 0, 0.5, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.JumpMod.Frame TextButton \\ --
+UI["2a"] = Instance.new("Frame", UI["20"])
+UI["2a"]["BorderSizePixel"] = 0
+UI["2a"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2a"]["Size"] = UDim2.new(0.22159, 0, 1, 0)
+UI["2a"]["Position"] = UDim2.new(0.77841, 0, 0, 0)
+UI["2a"]["Name"] = [[Frame TextButton]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.JumpMod.Frame TextButton.UIStroke \\ --
+UI["2b"] = Instance.new("UIStroke", UI["2a"])
+UI["2b"]["Thickness"] = 2
+UI["2b"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.JumpMod.Frame TextButton.UIStroke.UIGradient \\ --
+UI["2c"] = Instance.new("UIGradient", UI["2b"])
+UI["2c"]["Rotation"] = 359.36499
+UI["2c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.JumpMod.Frame TextButton.UICorner \\ --
+UI["2d"] = Instance.new("UICorner", UI["2a"])
+
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.JumpMod.Frame TextButton.x1i \\ --
+UI["2e"] = Instance.new("TextBox", UI["2a"])
+UI["2e"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["2e"]["PlaceholderColor3"] = Color3.fromRGB(231, 231, 231)
+UI["2e"]["BorderSizePixel"] = 0
+UI["2e"]["TextWrapped"] = true
+UI["2e"]["TextSize"] = 14
+UI["2e"]["Name"] = [[x1i]]
+UI["2e"]["TextScaled"] = true
+UI["2e"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["2e"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+UI["2e"]["PlaceholderText"] = [[Speed]]
+UI["2e"]["Size"] = UDim2.new(0.705, 0, 0.32, 0)
+UI["2e"]["Position"] = UDim2.new(0.5, 0, 0.5, 0)
+UI["2e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["2e"]["Text"] = [[16 st/s]]
+UI["2e"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.FlightMod \\ --
+UI["2f"] = Instance.new("Frame", UI["10"])
+UI["2f"]["BorderSizePixel"] = 0
+UI["2f"]["Size"] = UDim2.new(1, 0, 0.29412, 0)
+UI["2f"]["Position"] = UDim2.new(0, 0, 0.35294, 0)
+UI["2f"]["Name"] = [[FlightMod]]
+UI["2f"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.FlightMod.Bar \\ --
+UI["30"] = Instance.new("Frame", UI["2f"])
+UI["30"]["BorderSizePixel"] = 0
+UI["30"]["BackgroundColor3"] = Color3.fromRGB(16, 17, 19)
+UI["30"]["Size"] = UDim2.new(0.73295, 0, 1, 0)
+UI["30"]["Name"] = [[Bar]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.FlightMod.Bar.Frame 1 \\ --
+UI["31"] = Instance.new("Frame", UI["30"])
+UI["31"]["BorderSizePixel"] = 0
+UI["31"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["31"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["31"]["Name"] = [[Frame 1]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.FlightMod.Bar.Frame 1.UIGradient \\ --
+UI["32"] = Instance.new("UIGradient", UI["31"])
+UI["32"]["Rotation"] = 359.36499
+UI["32"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.FlightMod.Bar.Frame 1.UICorner \\ --
+UI["33"] = Instance.new("UICorner", UI["31"])
+UI["33"]["CornerRadius"] = UDim.new(0.166, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.FlightMod.Bar.Frame 1.FlightSpeed \\ --
+UI["34"] = Instance.new("NumberValue", UI["31"])
+UI["34"]["Name"] = [[FlightSpeed]]
+UI["34"]["Value"] = 5
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.FlightMod.Bar.UIStroke \\ --
+UI["35"] = Instance.new("UIStroke", UI["30"])
+UI["35"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.FlightMod.Bar.UIStroke.UIGradient \\ --
+UI["36"] = Instance.new("UIGradient", UI["35"])
+UI["36"]["Rotation"] = 90
+UI["36"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(103, 103, 103))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.FlightMod.Bar.UICorner \\ --
+UI["37"] = Instance.new("UICorner", UI["30"])
+UI["37"]["CornerRadius"] = UDim.new(0.166, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.FlightMod.Bar.Flight Speed \\ --
+UI["38"] = Instance.new("TextLabel", UI["30"])
+UI["38"]["TextWrapped"] = true
+UI["38"]["BorderSizePixel"] = 0
+UI["38"]["TextScaled"] = true
+UI["38"]["TextSize"] = 15
+UI["38"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["38"]["TextColor3"] = Color3.fromRGB(241, 241, 241)
+UI["38"]["BackgroundTransparency"] = 1
+UI["38"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+UI["38"]["Size"] = UDim2.new(0.324, 0, 0.33, 0)
+UI["38"]["Text"] = [[Flight Speed]]
+UI["38"]["Name"] = [[Flight Speed]]
+UI["38"]["Position"] = UDim2.new(0.5, 0, 0.5, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.FlightMod.Frame TextButton \\ --
+UI["39"] = Instance.new("Frame", UI["2f"])
+UI["39"]["BorderSizePixel"] = 0
+UI["39"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["39"]["Size"] = UDim2.new(0.22159, 0, 1, 0)
+UI["39"]["Position"] = UDim2.new(0.77841, 0, 0, 0)
+UI["39"]["Name"] = [[Frame TextButton]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.FlightMod.Frame TextButton.UIStroke \\ --
+UI["3a"] = Instance.new("UIStroke", UI["39"])
+UI["3a"]["Thickness"] = 2
+UI["3a"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.FlightMod.Frame TextButton.UIStroke.UIGradient \\ --
+UI["3b"] = Instance.new("UIGradient", UI["3a"])
+UI["3b"]["Rotation"] = 359.36499
+UI["3b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.FlightMod.Frame TextButton.UICorner \\ --
+UI["3c"] = Instance.new("UICorner", UI["39"])
+
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Mods.FlightMod.Frame TextButton.x1i \\ --
+UI["3d"] = Instance.new("TextBox", UI["39"])
+UI["3d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["3d"]["PlaceholderColor3"] = Color3.fromRGB(231, 231, 231)
+UI["3d"]["BorderSizePixel"] = 0
+UI["3d"]["TextWrapped"] = true
+UI["3d"]["TextSize"] = 14
+UI["3d"]["Name"] = [[x1i]]
+UI["3d"]["TextScaled"] = true
+UI["3d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3d"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["3d"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+UI["3d"]["PlaceholderText"] = [[Speed]]
+UI["3d"]["Size"] = UDim2.new(0.705, 0, 0.32, 0)
+UI["3d"]["Position"] = UDim2.new(0.5, 0, 0.5, 0)
+UI["3d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3d"]["Text"] = [[16 st/s]]
+UI["3d"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Spaceholder \\ --
+UI["3e"] = Instance.new("Frame", UI["8"])
+UI["3e"]["BorderSizePixel"] = 0
+UI["3e"]["BackgroundColor3"] = Color3.fromRGB(65, 65, 65)
+UI["3e"]["Size"] = UDim2.new(0.72292, 0, 0.0015, 0)
+UI["3e"]["Position"] = UDim2.new(0.13854, 0, 0.50449, 0)
+UI["3e"]["Name"] = [[Spaceholder]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.actions \\ --
+UI["3f"] = Instance.new("Frame", UI["8"])
+UI["3f"]["BorderSizePixel"] = 0
+UI["3f"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["3f"]["Size"] = UDim2.new(0.72292, 0, 0.08982, 0)
+UI["3f"]["Position"] = UDim2.new(0.12846, 0, 0.87575, 0)
+UI["3f"]["Name"] = [[actions]]
+UI["3f"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.actions.1 \\ --
+UI["40"] = Instance.new("TextButton", UI["3f"])
+UI["40"]["BorderSizePixel"] = 0
+UI["40"]["TextSize"] = 14
+UI["40"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["40"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["40"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["40"]["Size"] = UDim2.new(0.209, 0, 1, 0)
+UI["40"]["Name"] = [[1]]
+UI["40"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["40"]["Text"] = [[]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.actions.1.UICorner \\ --
+UI["41"] = Instance.new("UICorner", UI["40"])
+UI["41"]["CornerRadius"] = UDim.new(0.5, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.actions.1.UIStroke \\ --
+UI["42"] = Instance.new("UIStroke", UI["40"])
+UI["42"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["42"]["Thickness"] = 3
+UI["42"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.actions.1.UIStroke.UIGradient \\ --
+UI["43"] = Instance.new("UIGradient", UI["42"])
+UI["43"]["Rotation"] = 359.36499
+UI["43"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.actions.1.Frame 3 \\ --
+UI["44"] = Instance.new("ImageLabel", UI["40"])
+UI["44"]["BorderSizePixel"] = 0
+UI["44"]["Image"] = [[rbxassetid://18452556953]]
+UI["44"]["Size"] = UDim2.new(0.6, 0, 0.6, 0)
+UI["44"]["BackgroundTransparency"] = 1
+UI["44"]["Name"] = [[Frame 3]]
+UI["44"]["Position"] = UDim2.new(0.2, 0, 0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.actions.2 \\ --
+UI["45"] = Instance.new("TextButton", UI["3f"])
+UI["45"]["BorderSizePixel"] = 0
+UI["45"]["TextSize"] = 14
+UI["45"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["45"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["45"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["45"]["Size"] = UDim2.new(0.209, 0, 1, 0)
+UI["45"]["Name"] = [[2]]
+UI["45"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["45"]["Text"] = [[]]
+UI["45"]["Position"] = UDim2.new(0.265, 0, 0, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.actions.2.UICorner \\ --
+UI["46"] = Instance.new("UICorner", UI["45"])
+UI["46"]["CornerRadius"] = UDim.new(0.5, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.actions.2.UIStroke \\ --
+UI["47"] = Instance.new("UIStroke", UI["45"])
+UI["47"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["47"]["Thickness"] = 3
+UI["47"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.actions.2.UIStroke.UIGradient \\ --
+UI["48"] = Instance.new("UIGradient", UI["47"])
+UI["48"]["Rotation"] = 359.36499
+UI["48"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.actions.2.Frame 3 \\ --
+UI["49"] = Instance.new("ImageLabel", UI["45"])
+UI["49"]["BorderSizePixel"] = 0
+UI["49"]["Image"] = [[rbxassetid://18439067586]]
+UI["49"]["Size"] = UDim2.new(0.6, 0, 0.6, 0)
+UI["49"]["BackgroundTransparency"] = 1
+UI["49"]["Name"] = [[Frame 3]]
+UI["49"]["Position"] = UDim2.new(0.2, 0, 0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.actions.3 \\ --
+UI["4a"] = Instance.new("TextButton", UI["3f"])
+UI["4a"]["BorderSizePixel"] = 0
+UI["4a"]["TextSize"] = 14
+UI["4a"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4a"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["4a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4a"]["Size"] = UDim2.new(0.209, 0, 1, 0)
+UI["4a"]["Name"] = [[3]]
+UI["4a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4a"]["Text"] = [[]]
+UI["4a"]["Position"] = UDim2.new(0.526, 0, 0, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.actions.3.UICorner \\ --
+UI["4b"] = Instance.new("UICorner", UI["4a"])
+UI["4b"]["CornerRadius"] = UDim.new(0.5, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.actions.3.UIStroke \\ --
+UI["4c"] = Instance.new("UIStroke", UI["4a"])
+UI["4c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["4c"]["Thickness"] = 3
+UI["4c"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.actions.3.UIStroke.UIGradient \\ --
+UI["4d"] = Instance.new("UIGradient", UI["4c"])
+UI["4d"]["Rotation"] = 359.36499
+UI["4d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.actions.3.Frame 3 \\ --
+UI["4e"] = Instance.new("ImageLabel", UI["4a"])
+UI["4e"]["BorderSizePixel"] = 0
+UI["4e"]["Image"] = [[rbxassetid://18461222952]]
+UI["4e"]["Size"] = UDim2.new(0.6, 0, 0.6, 0)
+UI["4e"]["BackgroundTransparency"] = 1
+UI["4e"]["Name"] = [[Frame 3]]
+UI["4e"]["Position"] = UDim2.new(0.2, 0, 0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.actions.4 \\ --
+UI["4f"] = Instance.new("TextButton", UI["3f"])
+UI["4f"]["BorderSizePixel"] = 0
+UI["4f"]["TextSize"] = 14
+UI["4f"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4f"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["4f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["4f"]["Size"] = UDim2.new(0.209, 0, 1, 0)
+UI["4f"]["Name"] = [[4]]
+UI["4f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["4f"]["Text"] = [[]]
+UI["4f"]["Position"] = UDim2.new(0.791, 0, 0, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.actions.4.UICorner \\ --
+UI["50"] = Instance.new("UICorner", UI["4f"])
+UI["50"]["CornerRadius"] = UDim.new(0.5, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.actions.4.UIStroke \\ --
+UI["51"] = Instance.new("UIStroke", UI["4f"])
+UI["51"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["51"]["Thickness"] = 3
+UI["51"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.actions.4.UIStroke.UIGradient \\ --
+UI["52"] = Instance.new("UIGradient", UI["51"])
+UI["52"]["Rotation"] = 359.36499
+UI["52"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.actions.4.Frame 3 \\ --
+UI["53"] = Instance.new("ImageLabel", UI["4f"])
+UI["53"]["BorderSizePixel"] = 0
+UI["53"]["Image"] = [[rbxassetid://18461304587]]
+UI["53"]["Size"] = UDim2.new(0.6, 0, 0.6, 0)
+UI["53"]["BackgroundTransparency"] = 1
+UI["53"]["Name"] = [[Frame 3]]
+UI["53"]["Position"] = UDim2.new(0.2, 0, 0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Header \\ --
+UI["54"] = Instance.new("TextLabel", UI["8"])
+UI["54"]["TextWrapped"] = true
+UI["54"]["BorderSizePixel"] = 0
+UI["54"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["54"]["TextScaled"] = true
+UI["54"]["TextSize"] = 24
+UI["54"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["54"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["54"]["BackgroundTransparency"] = 1
+UI["54"]["Size"] = UDim2.new(0.52645, 0, 0.03593, 0)
+UI["54"]["Text"] = [[Home]]
+UI["54"]["Name"] = [[Header]]
+UI["54"]["Position"] = UDim2.new(0.24685, 0, 0.02246, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Header.UIGradient \\ --
+UI["55"] = Instance.new("UIGradient", UI["54"])
+UI["55"]["Rotation"] = 359.36499
+UI["55"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Home.Properties \\ --
+UI["56"] = Instance.new("TextLabel", UI["8"])
+UI["56"]["TextWrapped"] = true
+UI["56"]["BorderSizePixel"] = 0
+UI["56"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["56"]["TextScaled"] = true
+UI["56"]["TextSize"] = 24
+UI["56"]["FontFace"] = Font.new([[rbxassetid://11598121416]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["56"]["TextColor3"] = Color3.fromRGB(241, 241, 241)
+UI["56"]["BackgroundTransparency"] = 1
+UI["56"]["Size"] = UDim2.new(0.393, 0, 0.036, 0)
+UI["56"]["Text"] = [[Properties]]
+UI["56"]["Name"] = [[Properties]]
+UI["56"]["Position"] = UDim2.new(0.30227, 0, 0.52695, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList \\ --
+UI["57"] = Instance.new("Frame", UI["6"])
+UI["57"]["BorderSizePixel"] = 0
+UI["57"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["57"]["Size"] = UDim2.new(0.88665, 0, 0.94162, 0)
+UI["57"]["Position"] = UDim2.new(0.05542, 0, 0.02994, 0)
+UI["57"]["Name"] = [[PlayerList]]
+UI["57"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Home \\ --
+UI["58"] = Instance.new("Frame", UI["57"])
+UI["58"]["BorderSizePixel"] = 0
+UI["58"]["Size"] = UDim2.new(0.56818, 0, 0.42448, 0)
+UI["58"]["Position"] = UDim2.new(0.23011, 0, 0.06041, 0)
+UI["58"]["Name"] = [[Home]]
+UI["58"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Home.Picture \\ --
+UI["59"] = Instance.new("ImageLabel", UI["58"])
+UI["59"]["BorderSizePixel"] = 0
+UI["59"]["Image"] = [[https://www.roblox.com/headshot-thumbnail/image?userId=156&width=180&height=180&format=png]]
+UI["59"]["Size"] = UDim2.new(1, 0, 0.74906, 0)
+UI["59"]["BackgroundTransparency"] = 1
+UI["59"]["Name"] = [[Picture]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Home.Picture.UIStroke \\ --
+UI["5a"] = Instance.new("UIStroke", UI["59"])
+UI["5a"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Home.Picture.UIStroke.UIGradient \\ --
+UI["5b"] = Instance.new("UIGradient", UI["5a"])
+UI["5b"]["Rotation"] = 90
+UI["5b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(103, 103, 103))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Home.Picture.UICorner \\ --
+UI["5c"] = Instance.new("UICorner", UI["59"])
+UI["5c"]["CornerRadius"] = UDim.new(0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Home.DisplayName \\ --
+UI["5d"] = Instance.new("TextLabel", UI["58"])
+UI["5d"]["TextWrapped"] = true
+UI["5d"]["BorderSizePixel"] = 0
+UI["5d"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["5d"]["TextScaled"] = true
+UI["5d"]["TextSize"] = 20
+UI["5d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["5d"]["TextColor3"] = Color3.fromRGB(241, 241, 241)
+UI["5d"]["BackgroundTransparency"] = 1
+UI["5d"]["Size"] = UDim2.new(0.28, 0, 0.08, 0)
+UI["5d"]["Text"] = [[N/A]]
+UI["5d"]["Name"] = [[DisplayName]]
+UI["5d"]["Position"] = UDim2.new(0.355, 0, 0.82772, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Home.PlrName \\ --
+UI["5e"] = Instance.new("TextLabel", UI["58"])
+UI["5e"]["TextWrapped"] = true
+UI["5e"]["BorderSizePixel"] = 0
+UI["5e"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["5e"]["TextScaled"] = true
+UI["5e"]["TextSize"] = 17
+UI["5e"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["5e"]["TextColor3"] = Color3.fromRGB(100, 100, 100)
+UI["5e"]["BackgroundTransparency"] = 1
+UI["5e"]["Size"] = UDim2.new(0.49, 0, 0.07084, 0)
+UI["5e"]["Text"] = [[N/A]]
+UI["5e"]["Name"] = [[PlrName]]
+UI["5e"]["Position"] = UDim2.new(0.25, 0, 0.92509, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Spaceholder \\ --
+UI["5f"] = Instance.new("Frame", UI["57"])
+UI["5f"]["BorderSizePixel"] = 0
+UI["5f"]["BackgroundColor3"] = Color3.fromRGB(65, 65, 65)
+UI["5f"]["Size"] = UDim2.new(0.81534, 0, 0.00159, 0)
+UI["5f"]["Position"] = UDim2.new(0.10511, 0, 0.51033, 0)
+UI["5f"]["Name"] = [[Spaceholder]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.commands \\ --
+UI["60"] = Instance.new("Frame", UI["57"])
+UI["60"]["BorderSizePixel"] = 0
+UI["60"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["60"]["Size"] = UDim2.new(0.81534, 0, 0.09539, 0)
+UI["60"]["Position"] = UDim2.new(0.09375, 0, 0.53259, 0)
+UI["60"]["Name"] = [[commands]]
+UI["60"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.commands.1 \\ --
+UI["61"] = Instance.new("TextButton", UI["60"])
+UI["61"]["BorderSizePixel"] = 0
+UI["61"]["TextSize"] = 14
+UI["61"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["61"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["61"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["61"]["Size"] = UDim2.new(0.209, 0, 1, 0)
+UI["61"]["Name"] = [[1]]
+UI["61"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["61"]["Text"] = [[]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.commands.1.UICorner \\ --
+UI["62"] = Instance.new("UICorner", UI["61"])
+UI["62"]["CornerRadius"] = UDim.new(0, 30)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.commands.1.UIStroke \\ --
+UI["63"] = Instance.new("UIStroke", UI["61"])
+UI["63"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["63"]["Thickness"] = 3
+UI["63"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.commands.1.UIStroke.UIGradient \\ --
+UI["64"] = Instance.new("UIGradient", UI["63"])
+UI["64"]["Rotation"] = 359.36499
+UI["64"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.commands.1.Frame 3 \\ --
+UI["65"] = Instance.new("ImageLabel", UI["61"])
+UI["65"]["BorderSizePixel"] = 0
+UI["65"]["Image"] = [[rbxassetid://18454877349]]
+UI["65"]["Size"] = UDim2.new(0.6, 0, 0.6, 0)
+UI["65"]["BackgroundTransparency"] = 1
+UI["65"]["Name"] = [[Frame 3]]
+UI["65"]["Position"] = UDim2.new(0.2, 0, 0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.commands.2 \\ --
+UI["66"] = Instance.new("TextButton", UI["60"])
+UI["66"]["BorderSizePixel"] = 0
+UI["66"]["TextSize"] = 14
+UI["66"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["66"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["66"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["66"]["Size"] = UDim2.new(0.209, 0, 1, 0)
+UI["66"]["Name"] = [[2]]
+UI["66"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["66"]["Text"] = [[]]
+UI["66"]["Position"] = UDim2.new(0.394, 0, 0, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.commands.2.UICorner \\ --
+UI["67"] = Instance.new("UICorner", UI["66"])
+UI["67"]["CornerRadius"] = UDim.new(0, 30)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.commands.2.UIStroke \\ --
+UI["68"] = Instance.new("UIStroke", UI["66"])
+UI["68"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["68"]["Thickness"] = 3
+UI["68"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.commands.2.UIStroke.UIGradient \\ --
+UI["69"] = Instance.new("UIGradient", UI["68"])
+UI["69"]["Rotation"] = 359.36499
+UI["69"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.commands.2.Frame 3 \\ --
+UI["6a"] = Instance.new("ImageLabel", UI["66"])
+UI["6a"]["BorderSizePixel"] = 0
+UI["6a"]["Image"] = [[rbxassetid://18439064517]]
+UI["6a"]["Size"] = UDim2.new(0.6, 0, 0.6, 0)
+UI["6a"]["BackgroundTransparency"] = 1
+UI["6a"]["Name"] = [[Frame 3]]
+UI["6a"]["Position"] = UDim2.new(0.2, 0, 0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.commands.3 \\ --
+UI["6b"] = Instance.new("TextButton", UI["60"])
+UI["6b"]["BorderSizePixel"] = 0
+UI["6b"]["TextSize"] = 14
+UI["6b"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6b"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["6b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["6b"]["Size"] = UDim2.new(0.209, 0, 1, 0)
+UI["6b"]["Name"] = [[3]]
+UI["6b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["6b"]["Text"] = [[]]
+UI["6b"]["Position"] = UDim2.new(0.791, 0, 0, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.commands.3.UICorner \\ --
+UI["6c"] = Instance.new("UICorner", UI["6b"])
+UI["6c"]["CornerRadius"] = UDim.new(0, 30)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.commands.3.UIStroke \\ --
+UI["6d"] = Instance.new("UIStroke", UI["6b"])
+UI["6d"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["6d"]["Thickness"] = 3
+UI["6d"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.commands.3.UIStroke.UIGradient \\ --
+UI["6e"] = Instance.new("UIGradient", UI["6d"])
+UI["6e"]["Rotation"] = 359.36499
+UI["6e"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.commands.3.Frame 3 \\ --
+UI["6f"] = Instance.new("ImageLabel", UI["6b"])
+UI["6f"]["BorderSizePixel"] = 0
+UI["6f"]["Image"] = [[rbxassetid://18454881336]]
+UI["6f"]["Size"] = UDim2.new(0.6, 0, 0.6, 0)
+UI["6f"]["BackgroundTransparency"] = 1
+UI["6f"]["Name"] = [[Frame 3]]
+UI["6f"]["Position"] = UDim2.new(0.2, 0, 0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Container \\ --
+UI["70"] = Instance.new("ScrollingFrame", UI["57"])
+UI["70"]["Active"] = true
+UI["70"]["BorderSizePixel"] = 0
+UI["70"]["CanvasSize"] = UDim2.new(0, 0, 0, 0)
+UI["70"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["70"]["Name"] = [[Container]]
+UI["70"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y
+UI["70"]["Size"] = UDim2.new(0.855, 0, 0.33347, 0)
+UI["70"]["ScrollBarImageColor3"] = Color3.fromRGB(164, 163, 166)
+UI["70"]["Position"] = UDim2.new(0.074, 0, 0.66653, 0)
+UI["70"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Container.UIListLayout \\ --
+UI["71"] = Instance.new("UIListLayout", UI["70"])
+UI["71"]["Padding"] = UDim.new(0.02, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Container.UIStroke \\ --
+UI["72"] = Instance.new("UIStroke", UI["70"])
+UI["72"]["Thickness"] = 2
+UI["72"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Container.UIStroke.UIGradient \\ --
+UI["73"] = Instance.new("UIGradient", UI["72"])
+UI["73"]["Rotation"] = 359.36499
+UI["73"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Container.UIPadding \\ --
+UI["74"] = Instance.new("UIPadding", UI["70"])
+UI["74"]["PaddingTop"] = UDim.new(0.04, 0)
+UI["74"]["PaddingBottom"] = UDim.new(0.04, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Container.Z \\ --
+UI["75"] = Instance.new("Frame", UI["70"])
+UI["75"]["BorderSizePixel"] = 0
+UI["75"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["75"]["Size"] = UDim2.new(1, 0, 0.2, 0)
+UI["75"]["Position"] = UDim2.new(0.03323, 0, 0.50939, 0)
+UI["75"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["75"]["Name"] = [[Z]]
+UI["75"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Container.Template \\ --
+UI["76"] = Instance.new("TextButton")
+UI["76"]["BorderSizePixel"] = 0
+UI["76"]["TextSize"] = 14
+UI["76"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["76"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["76"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["76"]["Size"] = UDim2.new(1, 0, 0.181, 0)
+UI["76"]["Name"] = [[Template]]
+UI["76"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["76"]["Text"] = [[]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Container.Template.Picture \\ --
+UI["77"] = Instance.new("ImageLabel", UI["76"])
+UI["77"]["BorderSizePixel"] = 0
+UI["77"]["Image"] = [[https://www.roblox.com/headshot-thumbnail/image?userId=937469994&width=180&height=180&format=png]]
+UI["77"]["Size"] = UDim2.new(0.11296, 0, 0.85, 0)
+UI["77"]["BackgroundTransparency"] = 1
+UI["77"]["Name"] = [[Picture]]
+UI["77"]["Position"] = UDim2.new(0.04651, 0, 0.075, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Container.Template.Polygon 1 \\ --
+UI["78"] = Instance.new("ImageLabel", UI["76"])
+UI["78"]["Image"] = [[rbxassetid://18454776886]]
+UI["78"]["Size"] = UDim2.new(0.4485, 0, 1, 0)
+UI["78"]["BackgroundTransparency"] = 1
+UI["78"]["Name"] = [[Polygon 1]]
+UI["78"]["Position"] = UDim2.new(0.5515, 0, 0, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Container.Template.Polygon 1.PlayerName \\ --
+UI["79"] = Instance.new("TextLabel", UI["78"])
+UI["79"]["TextWrapped"] = true
+UI["79"]["BorderSizePixel"] = 0
+UI["79"]["TextScaled"] = true
+UI["79"]["TextSize"] = 16
+UI["79"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["79"]["TextColor3"] = Color3.fromRGB(100, 100, 100)
+UI["79"]["BackgroundTransparency"] = 1
+UI["79"]["Size"] = UDim2.new(0.72593, 0, 0.4, 0)
+UI["79"]["Text"] = [[@Joe_0815]]
+UI["79"]["Name"] = [[PlayerName]]
+UI["79"]["Position"] = UDim2.new(0.22222, 0, 0.3, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Container.Template.DisplayName \\ --
+UI["7a"] = Instance.new("TextLabel", UI["76"])
+UI["7a"]["TextWrapped"] = true
+UI["7a"]["BorderSizePixel"] = 0
+UI["7a"]["TextScaled"] = true
+UI["7a"]["TextSize"] = 16
+UI["7a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["7a"]["TextColor3"] = Color3.fromRGB(241, 241, 241)
+UI["7a"]["BackgroundTransparency"] = 1
+UI["7a"]["Size"] = UDim2.new(0.349, 0, 0.5, 0)
+UI["7a"]["Text"] = [[NZXT]]
+UI["7a"]["Name"] = [[DisplayName]]
+UI["7a"]["Position"] = UDim2.new(0.20626, 0, 0.25, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Container.Template.UIGradient \\ --
+UI["7b"] = Instance.new("UIGradient", UI["76"])
+UI["7b"]["Rotation"] = 359.36499
+UI["7b"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Container.UICorner \\ --
+UI["7c"] = Instance.new("UICorner", UI["70"])
+UI["7c"]["CornerRadius"] = UDim.new(1, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Header \\ --
+UI["7d"] = Instance.new("TextLabel", UI["57"])
+UI["7d"]["TextWrapped"] = true
+UI["7d"]["BorderSizePixel"] = 0
+UI["7d"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["7d"]["TextScaled"] = true
+UI["7d"]["TextSize"] = 24
+UI["7d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["7d"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["7d"]["BackgroundTransparency"] = 1
+UI["7d"]["Size"] = UDim2.new(0.52645, 0, 0.03938, 0)
+UI["7d"]["Text"] = [[Players]]
+UI["7d"]["Name"] = [[Header]]
+UI["7d"]["Position"] = UDim2.new(0.24994, 0, -0.00861, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Header.UIGradient \\ --
+UI["7e"] = Instance.new("UIGradient", UI["7d"])
+UI["7e"]["Rotation"] = 359.36499
+UI["7e"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Shadow \\ --
+UI["7f"] = Instance.new("Frame", UI["57"])
+UI["7f"]["ZIndex"] = 2
+UI["7f"]["BorderSizePixel"] = 0
+UI["7f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["7f"]["Size"] = UDim2.new(1.12784, 0, 0.15262, 0)
+UI["7f"]["Position"] = UDim2.new(-0.0625, 0, 0.87758, 0)
+UI["7f"]["Name"] = [[Shadow]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.PlayerList.Shadow.UIGradient \\ --
+UI["80"] = Instance.new("UIGradient", UI["7f"])
+UI["80"]["Rotation"] = 270
+UI["80"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(0.625, 0.29),NumberSequenceKeypoint.new(1.000, 1)}
+UI["80"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(0.625, Color3.fromRGB(20, 20, 20)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(20, 20, 20))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons \\ --
+UI["81"] = Instance.new("Frame", UI["6"])
+UI["81"]["BorderSizePixel"] = 0
+UI["81"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["81"]["Size"] = UDim2.new(0.88665, 0, 0.94162, 0)
+UI["81"]["Position"] = UDim2.new(0.05542, 0, 0.02994, 0)
+UI["81"]["Name"] = [[Addons]]
+UI["81"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Header \\ --
+UI["82"] = Instance.new("TextLabel", UI["81"])
+UI["82"]["TextWrapped"] = true
+UI["82"]["BorderSizePixel"] = 0
+UI["82"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["82"]["TextScaled"] = true
+UI["82"]["TextSize"] = 24
+UI["82"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["82"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["82"]["BackgroundTransparency"] = 1
+UI["82"]["Size"] = UDim2.new(0.594, 0, 0.039, 0)
+UI["82"]["Text"] = [[Add-Ons]]
+UI["82"]["Name"] = [[Header]]
+UI["82"]["Position"] = UDim2.new(0.202, 0, 0, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Header.UIGradient \\ --
+UI["83"] = Instance.new("UIGradient", UI["82"])
+UI["83"]["Rotation"] = 359.36499
+UI["83"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar \\ --
+UI["84"] = Instance.new("Frame", UI["81"])
+UI["84"]["BorderSizePixel"] = 0
+UI["84"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["84"]["Size"] = UDim2.new(1, 0, 0.08426, 0)
+UI["84"]["Position"] = UDim2.new(0, 0, 0.06359, 0)
+UI["84"]["Name"] = [[TopBar]]
+UI["84"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.Search \\ --
+UI["85"] = Instance.new("Frame", UI["84"])
+UI["85"]["BorderSizePixel"] = 0
+UI["85"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["85"]["Size"] = UDim2.new(0.85227, 0, 0.4717, 0)
+UI["85"]["Name"] = [[Search]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.Search.imageSearch \\ --
+UI["86"] = Instance.new("ImageLabel", UI["85"])
+UI["86"]["BorderSizePixel"] = 0
+UI["86"]["Image"] = [[rbxassetid://18460337155]]
+UI["86"]["Size"] = UDim2.new(0.06333, 0, 0.76, 0)
+UI["86"]["BackgroundTransparency"] = 1
+UI["86"]["Name"] = [[imageSearch]]
+UI["86"]["Position"] = UDim2.new(0.01667, 0, 0.12, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.Search.imageClear \\ --
+UI["87"] = Instance.new("ImageLabel", UI["85"])
+UI["87"]["BorderSizePixel"] = 0
+UI["87"]["Image"] = [[rbxassetid://18460343366]]
+UI["87"]["Size"] = UDim2.new(0.07, 0, 0.85, 0)
+UI["87"]["BackgroundTransparency"] = 1
+UI["87"]["Name"] = [[imageClear]]
+UI["87"]["Position"] = UDim2.new(0.90467, 0, 0.06974, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.Search.input \\ --
+UI["88"] = Instance.new("Frame", UI["85"])
+UI["88"]["BorderSizePixel"] = 0
+UI["88"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["88"]["Size"] = UDim2.new(0.76459, 0, 0.76, 0)
+UI["88"]["Position"] = UDim2.new(0.11, 0, 0.12, 0)
+UI["88"]["Name"] = [[input]]
+UI["88"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.Search.UIStroke \\ --
+UI["89"] = Instance.new("UIStroke", UI["85"])
+UI["89"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.Search.UIStroke.UIGradient \\ --
+UI["8a"] = Instance.new("UIGradient", UI["89"])
+UI["8a"]["Rotation"] = 359.36499
+UI["8a"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.Search.UICorner \\ --
+UI["8b"] = Instance.new("UICorner", UI["85"])
+UI["8b"]["CornerRadius"] = UDim.new(0.36, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.Search.TextBox \\ --
+UI["8c"] = Instance.new("TextBox", UI["85"])
+UI["8c"]["TextColor3"] = Color3.fromRGB(241, 241, 241)
+UI["8c"]["PlaceholderColor3"] = Color3.fromRGB(101, 101, 101)
+UI["8c"]["BorderSizePixel"] = 0
+UI["8c"]["TextWrapped"] = true
+UI["8c"]["TextSize"] = 14
+UI["8c"]["TextScaled"] = true
+UI["8c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["8c"]["ClearTextOnFocus"] = false
+UI["8c"]["PlaceholderText"] = [[Aimbot Universal]]
+UI["8c"]["Size"] = UDim2.new(0.765, 0, 0.64, 0)
+UI["8c"]["Position"] = UDim2.new(0.11, 0, 0.2, 0)
+UI["8c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8c"]["Text"] = [[]]
+UI["8c"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.chips \\ --
+UI["8d"] = Instance.new("Frame", UI["84"])
+UI["8d"]["BorderSizePixel"] = 0
+UI["8d"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["8d"]["Size"] = UDim2.new(1, 0, 0.39623, 0)
+UI["8d"]["Position"] = UDim2.new(0, 0, 0, 32)
+UI["8d"]["Name"] = [[chips]]
+UI["8d"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.chips.1 \\ --
+UI["8e"] = Instance.new("Frame", UI["8d"])
+UI["8e"]["BorderSizePixel"] = 0
+UI["8e"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8e"]["Size"] = UDim2.new(0.19886, 0, 1, 0)
+UI["8e"]["Name"] = [[1]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.chips.1.Arsenal \\ --
+UI["8f"] = Instance.new("TextLabel", UI["8e"])
+UI["8f"]["TextWrapped"] = true
+UI["8f"]["BorderSizePixel"] = 0
+UI["8f"]["TextScaled"] = true
+UI["8f"]["TextSize"] = 13
+UI["8f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["8f"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["8f"]["BackgroundTransparency"] = 1
+UI["8f"]["Size"] = UDim2.new(0.71429, 0, 0.61905, 0)
+UI["8f"]["Text"] = [[Arsenal]]
+UI["8f"]["Name"] = [[Arsenal]]
+UI["8f"]["Position"] = UDim2.new(0.14286, 0, 0.19048, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.chips.1.UIGradient \\ --
+UI["90"] = Instance.new("UIGradient", UI["8e"])
+UI["90"]["Rotation"] = 359.36499
+UI["90"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.chips.1.UICorner \\ --
+UI["91"] = Instance.new("UICorner", UI["8e"])
+UI["91"]["CornerRadius"] = UDim.new(1, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.chips.2 \\ --
+UI["92"] = Instance.new("Frame", UI["8d"])
+UI["92"]["BorderSizePixel"] = 0
+UI["92"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["92"]["Size"] = UDim2.new(0.38636, 0, 1, 0)
+UI["92"]["Position"] = UDim2.new(0, 77, 0, 0)
+UI["92"]["Name"] = [[2]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.chips.2.Universal-AddOn \\ --
+UI["93"] = Instance.new("TextLabel", UI["92"])
+UI["93"]["TextWrapped"] = true
+UI["93"]["BorderSizePixel"] = 0
+UI["93"]["TextScaled"] = true
+UI["93"]["TextSize"] = 13
+UI["93"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["93"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["93"]["BackgroundTransparency"] = 1
+UI["93"]["Size"] = UDim2.new(0.81618, 0, 0.61905, 0)
+UI["93"]["Text"] = [[Universal-AddOn]]
+UI["93"]["Name"] = [[Universal-AddOn]]
+UI["93"]["Position"] = UDim2.new(0.08824, 0, 0.19048, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.chips.2.UIGradient \\ --
+UI["94"] = Instance.new("UIGradient", UI["92"])
+UI["94"]["Rotation"] = 359.36499
+UI["94"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.chips.2.UICorner \\ --
+UI["95"] = Instance.new("UICorner", UI["92"])
+UI["95"]["CornerRadius"] = UDim.new(1, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.chips.3 \\ --
+UI["96"] = Instance.new("Frame", UI["8d"])
+UI["96"]["BorderSizePixel"] = 0
+UI["96"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["96"]["Size"] = UDim2.new(0.23011, 0, 1, 0)
+UI["96"]["Position"] = UDim2.new(0, 219, 0, 0)
+UI["96"]["Name"] = [[3]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.chips.3.Bloxfruits \\ --
+UI["97"] = Instance.new("TextLabel", UI["96"])
+UI["97"]["TextWrapped"] = true
+UI["97"]["BorderSizePixel"] = 0
+UI["97"]["TextScaled"] = true
+UI["97"]["TextSize"] = 13
+UI["97"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["97"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["97"]["BackgroundTransparency"] = 1
+UI["97"]["Size"] = UDim2.new(0.76543, 0, 0.61905, 0)
+UI["97"]["Text"] = [[Bloxfruits]]
+UI["97"]["Name"] = [[Bloxfruits]]
+UI["97"]["Position"] = UDim2.new(0.11111, 0, 0.19048, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.chips.3.UIGradient \\ --
+UI["98"] = Instance.new("UIGradient", UI["96"])
+UI["98"]["Rotation"] = 359.36499
+UI["98"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.chips.3.UICorner \\ --
+UI["99"] = Instance.new("UICorner", UI["96"])
+UI["99"]["CornerRadius"] = UDim.new(1, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.chips.4 \\ --
+UI["9a"] = Instance.new("Frame", UI["8d"])
+UI["9a"]["BorderSizePixel"] = 0
+UI["9a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["9a"]["Size"] = UDim2.new(0.12784, 0, 1, 0)
+UI["9a"]["Position"] = UDim2.new(0, 307, 0, 0)
+UI["9a"]["Name"] = [[4]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.chips.4.MM2 \\ --
+UI["9b"] = Instance.new("TextLabel", UI["9a"])
+UI["9b"]["TextWrapped"] = true
+UI["9b"]["BorderSizePixel"] = 0
+UI["9b"]["TextScaled"] = true
+UI["9b"]["TextSize"] = 13
+UI["9b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["9b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["9b"]["BackgroundTransparency"] = 1
+UI["9b"]["Size"] = UDim2.new(0.71111, 0, 0.61905, 0)
+UI["9b"]["Text"] = [[MM2]]
+UI["9b"]["Name"] = [[MM2]]
+UI["9b"]["Position"] = UDim2.new(0.17778, 0, 0.19048, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.chips.4.UIGradient \\ --
+UI["9c"] = Instance.new("UIGradient", UI["9a"])
+UI["9c"]["Rotation"] = 359.36499
+UI["9c"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.chips.4.UICorner \\ --
+UI["9d"] = Instance.new("UICorner", UI["9a"])
+UI["9d"]["CornerRadius"] = UDim.new(1, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.chips.UIListLayout \\ --
+UI["9e"] = Instance.new("UIListLayout", UI["8d"])
+UI["9e"]["Padding"] = UDim.new(0.02, 0)
+UI["9e"]["SortOrder"] = Enum.SortOrder.LayoutOrder
+UI["9e"]["FillDirection"] = Enum.FillDirection.Horizontal
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.FilterDrop \\ --
+UI["9f"] = Instance.new("TextButton", UI["84"])
+UI["9f"]["BorderSizePixel"] = 0
+UI["9f"]["TextSize"] = 14
+UI["9f"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["9f"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["9f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["9f"]["Size"] = UDim2.new(0.128, 0, 0.472, 0)
+UI["9f"]["Name"] = [[FilterDrop]]
+UI["9f"]["BorderColor3"] = Color3.fromRGB(15, 15, 15)
+UI["9f"]["Text"] = [[]]
+UI["9f"]["Position"] = UDim2.new(0.872, 0, 0, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.FilterDrop.UICorner \\ --
+UI["a0"] = Instance.new("UICorner", UI["9f"])
+UI["a0"]["CornerRadius"] = UDim.new(0.4, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.FilterDrop.UIStroke \\ --
+UI["a1"] = Instance.new("UIStroke", UI["9f"])
+UI["a1"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["a1"]["Color"] = Color3.fromRGB(100, 100, 100)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.FilterDrop.arrow_drop_down \\ --
+UI["a2"] = Instance.new("Frame", UI["9f"])
+UI["a2"]["BorderSizePixel"] = 0
+UI["a2"]["Size"] = UDim2.new(0.42222, 0, 0.72, 0)
+UI["a2"]["Position"] = UDim2.new(0.51111, 0, 0.12, 0)
+UI["a2"]["Name"] = [[arrow_drop_down]]
+UI["a2"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.FilterDrop.arrow_drop_down.ImageButton \\ --
+UI["a3"] = Instance.new("ImageButton", UI["a2"])
+UI["a3"]["BorderSizePixel"] = 0
+UI["a3"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a3"]["Image"] = [[rbxassetid://18476185487]]
+UI["a3"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["a3"]["BackgroundTransparency"] = 1
+UI["a3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.FilterDrop.filter_alt \\ --
+UI["a4"] = Instance.new("Frame", UI["9f"])
+UI["a4"]["BorderSizePixel"] = 0
+UI["a4"]["Size"] = UDim2.new(0.48889, 0, 0.88, 0)
+UI["a4"]["Position"] = UDim2.new(0.11111, 0, 0.04, 0)
+UI["a4"]["Name"] = [[filter_alt]]
+UI["a4"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.TopBar.FilterDrop.filter_alt.filter_alt \\ --
+UI["a5"] = Instance.new("ImageLabel", UI["a4"])
+UI["a5"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+UI["a5"]["Image"] = [[rbxassetid://18476285658]]
+UI["a5"]["Size"] = UDim2.new(0.8, 0, 0.8, 0)
+UI["a5"]["BackgroundTransparency"] = 1
+UI["a5"]["Name"] = [[filter_alt]]
+UI["a5"]["Position"] = UDim2.new(0.5, 0, 0.5, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Shadow \\ --
+UI["a6"] = Instance.new("Frame", UI["81"])
+UI["a6"]["ZIndex"] = 2
+UI["a6"]["BorderSizePixel"] = 0
+UI["a6"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["a6"]["Size"] = UDim2.new(1.12784, 0, 0.15262, 0)
+UI["a6"]["Position"] = UDim2.new(-0.0625, 0, 0.87758, 0)
+UI["a6"]["Name"] = [[Shadow]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Shadow.UIGradient \\ --
+UI["a7"] = Instance.new("UIGradient", UI["a6"])
+UI["a7"]["Rotation"] = 270
+UI["a7"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(0.625, 0.29),NumberSequenceKeypoint.new(1.000, 1)}
+UI["a7"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(0.625, Color3.fromRGB(20, 20, 20)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(20, 20, 20))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container \\ --
+UI["a8"] = Instance.new("ScrollingFrame", UI["81"])
+UI["a8"]["Active"] = true
+UI["a8"]["BorderSizePixel"] = 0
+UI["a8"]["CanvasSize"] = UDim2.new(0, 0, 0, 0)
+UI["a8"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["a8"]["Name"] = [[Container]]
+UI["a8"]["HorizontalScrollBarInset"] = Enum.ScrollBarInset.Always
+UI["a8"]["AutomaticCanvasSize"] = Enum.AutomaticSize.XY
+UI["a8"]["Size"] = UDim2.new(1, 0, 0.825, 0)
+UI["a8"]["ScrollBarImageColor3"] = Color3.fromRGB(101, 101, 101)
+UI["a8"]["Position"] = UDim2.new(0, 0, 0.175, 0)
+UI["a8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["a8"]["ScrollBarThickness"] = 6
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.UIStroke \\ --
+UI["a9"] = Instance.new("UIStroke", UI["a8"])
+UI["a9"]["Thickness"] = 2
+UI["a9"]["Color"] = Color3.fromRGB(100, 100, 100)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.UIListLayout \\ --
+UI["aa"] = Instance.new("UIListLayout", UI["a8"])
+UI["aa"]["HorizontalAlignment"] = Enum.HorizontalAlignment.Center
+UI["aa"]["Padding"] = UDim.new(0.04, 0)
+UI["aa"]["SortOrder"] = Enum.SortOrder.LayoutOrder
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template \\ --
+UI["ab"] = Instance.new("Frame", UI["a8"])
+UI["ab"]["BorderSizePixel"] = 0
+UI["ab"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["ab"]["Size"] = UDim2.new(1, 0, 0.19323, 0)
+UI["ab"]["Position"] = UDim2.new(0, 0, 0.00724, 0)
+UI["ab"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ab"]["Name"] = [[Template]]
+UI["ab"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn \\ --
+UI["ac"] = Instance.new("Frame", UI["ab"])
+UI["ac"]["BorderSizePixel"] = 0
+UI["ac"]["BackgroundColor3"] = Color3.fromRGB(9, 20, 23)
+UI["ac"]["Size"] = UDim2.new(0.955, 0, 1, 0)
+UI["ac"]["Position"] = UDim2.new(0.02868, 0, 0, 0)
+UI["ac"]["Name"] = [[TemplateAddOn]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.Aimbot \\ --
+UI["ad"] = Instance.new("TextLabel", UI["ac"])
+UI["ad"]["TextWrapped"] = true
+UI["ad"]["BorderSizePixel"] = 0
+UI["ad"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["ad"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["ad"]["TextScaled"] = true
+UI["ad"]["TextSize"] = 14
+UI["ad"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["ad"]["TextColor3"] = Color3.fromRGB(241, 241, 241)
+UI["ad"]["BackgroundTransparency"] = 1
+UI["ad"]["Size"] = UDim2.new(0.44, 0, 0.14, 0)
+UI["ad"]["Text"] = [[Aimbot]]
+UI["ad"]["Name"] = [[Aimbot]]
+UI["ad"]["Position"] = UDim2.new(0.22321, 0, 0.09, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.Creator \\ --
+UI["ae"] = Instance.new("TextLabel", UI["ac"])
+UI["ae"]["TextWrapped"] = true
+UI["ae"]["BorderSizePixel"] = 0
+UI["ae"]["TextXAlignment"] = Enum.TextXAlignment.Right
+UI["ae"]["TextScaled"] = true
+UI["ae"]["TextSize"] = 10
+UI["ae"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["ae"]["TextColor3"] = Color3.fromRGB(100, 100, 100)
+UI["ae"]["BackgroundTransparency"] = 1
+UI["ae"]["Size"] = UDim2.new(0.208, 0, 0.12, 0)
+UI["ae"]["Text"] = [[@Joe_0815]]
+UI["ae"]["Name"] = [[Creator]]
+UI["ae"]["Position"] = UDim2.new(0.75, 0, 0.1, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.Decription \\ --
+UI["af"] = Instance.new("TextLabel", UI["ac"])
+UI["af"]["TextWrapped"] = true
+UI["af"]["BorderSizePixel"] = 0
+UI["af"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["af"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["af"]["TextScaled"] = true
+UI["af"]["TextSize"] = 10
+UI["af"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["af"]["TextColor3"] = Color3.fromRGB(100, 100, 100)
+UI["af"]["BackgroundTransparency"] = 1
+UI["af"]["Size"] = UDim2.new(0.71726, 0, 0.29, 0)
+UI["af"]["Text"] = [[Adds a simple aim area to your mouse to hit your opponent every time]]
+UI["af"]["Name"] = [[Decription]]
+UI["af"]["Position"] = UDim2.new(0.22321, 0, 0.32, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.Decription.UITextSizeConstraint \\ --
+UI["b0"] = Instance.new("UITextSizeConstraint", UI["af"])
+UI["b0"]["MaxTextSize"] = 12
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.BottomBar \\ --
+UI["b1"] = Instance.new("Frame", UI["ac"])
+UI["b1"]["BorderSizePixel"] = 0
+UI["b1"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b1"]["Size"] = UDim2.new(0.93155, 0, 0.2, 0)
+UI["b1"]["Position"] = UDim2.new(0.02679, 0, 0.7, 0)
+UI["b1"]["Name"] = [[BottomBar]]
+UI["b1"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.BottomBar.Frame 9 \\ --
+UI["b2"] = Instance.new("Frame", UI["b1"])
+UI["b2"]["BorderSizePixel"] = 0
+UI["b2"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["b2"]["Size"] = UDim2.new(0.1853, 0, 1, 0)
+UI["b2"]["Position"] = UDim2.new(0.8147, 0, 0, 0)
+UI["b2"]["Name"] = [[Frame 9]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.BottomBar.Frame 9.2.1 \\ --
+UI["b3"] = Instance.new("TextLabel", UI["b2"])
+UI["b3"]["TextWrapped"] = true
+UI["b3"]["BorderSizePixel"] = 0
+UI["b3"]["TextScaled"] = true
+UI["b3"]["TextSize"] = 10
+UI["b3"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["b3"]["TextColor3"] = Color3.fromRGB(241, 241, 241)
+UI["b3"]["BackgroundTransparency"] = 1
+UI["b3"]["Size"] = UDim2.new(0.293, 0, 0.75, 0)
+UI["b3"]["Text"] = [[2.1]]
+UI["b3"]["Name"] = [[2.1]]
+UI["b3"]["Position"] = UDim2.new(0.5, 0, 0.1, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.BottomBar.Frame 9.update \\ --
+UI["b4"] = Instance.new("Frame", UI["b2"])
+UI["b4"]["BorderSizePixel"] = 0
+UI["b4"]["Size"] = UDim2.new(0.27, 0, 0.75, 0)
+UI["b4"]["Position"] = UDim2.new(0.1, 0, 0.15, 0)
+UI["b4"]["Name"] = [[update]]
+UI["b4"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.BottomBar.Frame 9.update.update \\ --
+UI["b5"] = Instance.new("ImageLabel", UI["b4"])
+UI["b5"]["BackgroundColor3"] = Color3.fromRGB(101, 101, 101)
+UI["b5"]["ImageColor3"] = Color3.fromRGB(101, 101, 101)
+UI["b5"]["Image"] = [[rbxassetid://18460851337]]
+UI["b5"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["b5"]["BackgroundTransparency"] = 1
+UI["b5"]["Name"] = [[update]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.BottomBar.Frame 9.UIStroke \\ --
+UI["b6"] = Instance.new("UIStroke", UI["b2"])
+UI["b6"]["Color"] = Color3.fromRGB(100, 100, 100)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.BottomBar.Frame 9.UICorner \\ --
+UI["b7"] = Instance.new("UICorner", UI["b2"])
+UI["b7"]["CornerRadius"] = UDim.new(0.3, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.BottomBar.InsertFrame \\ --
+UI["b8"] = Instance.new("TextButton", UI["b1"])
+UI["b8"]["BorderSizePixel"] = 0
+UI["b8"]["TextSize"] = 14
+UI["b8"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["b8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["b8"]["Size"] = UDim2.new(0.783, 0, 1, 0)
+UI["b8"]["Name"] = [[InsertFrame]]
+UI["b8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["b8"]["Text"] = [[]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.BottomBar.InsertFrame.UICorner \\ --
+UI["b9"] = Instance.new("UICorner", UI["b8"])
+UI["b9"]["CornerRadius"] = UDim.new(0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.BottomBar.InsertFrame.UIGradient \\ --
+UI["ba"] = Instance.new("UIGradient", UI["b8"])
+UI["ba"]["Rotation"] = 359.36499
+UI["ba"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.BottomBar.InsertFrame.Insert \\ --
+UI["bb"] = Instance.new("TextLabel", UI["b8"])
+UI["bb"]["TextWrapped"] = true
+UI["bb"]["BorderSizePixel"] = 0
+UI["bb"]["TextScaled"] = true
+UI["bb"]["TextSize"] = 12
+UI["bb"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["bb"]["TextColor3"] = Color3.fromRGB(241, 241, 241)
+UI["bb"]["BackgroundTransparency"] = 1
+UI["bb"]["Size"] = UDim2.new(0.706, 0, 0.7, 0)
+UI["bb"]["Text"] = [[Insert]]
+UI["bb"]["Name"] = [[Insert]]
+UI["bb"]["Position"] = UDim2.new(0.14694, 0, 0.15, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.UIStroke \\ --
+UI["bc"] = Instance.new("UIStroke", UI["ac"])
+UI["bc"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.UIStroke.UIGradient \\ --
+UI["bd"] = Instance.new("UIGradient", UI["bc"])
+UI["bd"]["Rotation"] = 359.36499
+UI["bd"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.UICorner \\ --
+UI["be"] = Instance.new("UICorner", UI["ac"])
+UI["be"]["CornerRadius"] = UDim.new(0.09, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.UIAspectRatioConstraint \\ --
+UI["bf"] = Instance.new("UIAspectRatioConstraint", UI["ac"])
+UI["bf"]["AspectRatio"] = 3.3272
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.AddOnImage \\ --
+UI["c0"] = Instance.new("ImageButton", UI["ac"])
+UI["c0"]["BorderSizePixel"] = 0
+UI["c0"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c0"]["Image"] = [[rbxassetid://18460426236]]
+UI["c0"]["Size"] = UDim2.new(0.164, 0, 0.55, 0)
+UI["c0"]["BackgroundTransparency"] = 1
+UI["c0"]["Name"] = [[AddOnImage]]
+UI["c0"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c0"]["Position"] = UDim2.new(0.027, 0, 0.09, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.AddOnImage.UICorner \\ --
+UI["c1"] = Instance.new("UICorner", UI["c0"])
+UI["c1"]["CornerRadius"] = UDim.new(0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.AddOnImage.UIStroke \\ --
+UI["c2"] = Instance.new("UIStroke", UI["c0"])
+UI["c2"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.Template.TemplateAddOn.AddOnImage.UIStroke.UIGradient \\ --
+UI["c3"] = Instance.new("UIGradient", UI["c2"])
+UI["c3"]["Rotation"] = 359.36499
+UI["c3"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Addons.Container.UIPadding \\ --
+UI["c4"] = Instance.new("UIPadding", UI["a8"])
+UI["c4"]["PaddingTop"] = UDim.new(0.02, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings \\ --
+UI["c5"] = Instance.new("Frame", UI["6"])
+UI["c5"]["BorderSizePixel"] = 0
+UI["c5"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c5"]["Size"] = UDim2.new(0.88665, 0, 0.94162, 0)
+UI["c5"]["Position"] = UDim2.new(0.05542, 0, 0.02994, 0)
+UI["c5"]["Name"] = [[Settings]]
+UI["c5"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Header \\ --
+UI["c6"] = Instance.new("TextLabel", UI["c5"])
+UI["c6"]["TextWrapped"] = true
+UI["c6"]["BorderSizePixel"] = 0
+UI["c6"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["c6"]["TextScaled"] = true
+UI["c6"]["TextSize"] = 24
+UI["c6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["c6"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["c6"]["BackgroundTransparency"] = 1
+UI["c6"]["Size"] = UDim2.new(0.59375, 0, 0.039, 0)
+UI["c6"]["Text"] = [[Settings]]
+UI["c6"]["Name"] = [[Header]]
+UI["c6"]["Position"] = UDim2.new(0.2017, 0, -0.00795, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Header.UIGradient \\ --
+UI["c7"] = Instance.new("UIGradient", UI["c6"])
+UI["c7"]["Rotation"] = 359.36499
+UI["c7"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar \\ --
+UI["c8"] = Instance.new("Frame", UI["c5"])
+UI["c8"]["BorderSizePixel"] = 0
+UI["c8"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c8"]["Size"] = UDim2.new(1, 0, 0.08426, 0)
+UI["c8"]["Position"] = UDim2.new(0, 0, 0.06359, 0)
+UI["c8"]["Name"] = [[TopBar]]
+UI["c8"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings \\ --
+UI["c9"] = Instance.new("Frame", UI["c8"])
+UI["c9"]["BorderSizePixel"] = 0
+UI["c9"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["c9"]["Size"] = UDim2.new(1, 0, 0.39623, 0)
+UI["c9"]["Position"] = UDim2.new(0, 0, 0.60377, 0)
+UI["c9"]["Name"] = [[RadialSettings]]
+UI["c9"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.1 \\ --
+UI["ca"] = Instance.new("Frame", UI["c9"])
+UI["ca"]["BorderSizePixel"] = 0
+UI["ca"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["ca"]["Size"] = UDim2.new(0.32102, 0, 1, 0)
+UI["ca"]["Name"] = [[1]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.1.Addon-Settings \\ --
+UI["cb"] = Instance.new("TextLabel", UI["ca"])
+UI["cb"]["TextWrapped"] = true
+UI["cb"]["BorderSizePixel"] = 0
+UI["cb"]["TextScaled"] = true
+UI["cb"]["TextSize"] = 10
+UI["cb"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["cb"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["cb"]["BackgroundTransparency"] = 1
+UI["cb"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+UI["cb"]["Size"] = UDim2.new(0.699, 0, 0.6, 0)
+UI["cb"]["Text"] = [[Addon-Settings]]
+UI["cb"]["Name"] = [[Addon-Settings]]
+UI["cb"]["Position"] = UDim2.new(0.4, 0, 0.5, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.1.UIStroke \\ --
+UI["cc"] = Instance.new("UIStroke", UI["ca"])
+UI["cc"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.1.UIStroke.UIGradient \\ --
+UI["cd"] = Instance.new("UIGradient", UI["cc"])
+UI["cd"]["Rotation"] = 359.36499
+UI["cd"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.1.UICorner \\ --
+UI["ce"] = Instance.new("UICorner", UI["ca"])
+UI["ce"]["CornerRadius"] = UDim.new(0, 9)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.1.Frame 11 \\ --
+UI["cf"] = Instance.new("TextButton", UI["ca"])
+UI["cf"]["BorderSizePixel"] = 0
+UI["cf"]["AutoButtonColor"] = false
+UI["cf"]["TextSize"] = 14
+UI["cf"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["cf"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["cf"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["cf"]["Size"] = UDim2.new(0.124, 0, 0.667, 0)
+UI["cf"]["Name"] = [[Frame 11]]
+UI["cf"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["cf"]["Text"] = [[]]
+UI["cf"]["Position"] = UDim2.new(0.805, 0, 0.143, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.1.Frame 11.UIStroke \\ --
+UI["d0"] = Instance.new("UIStroke", UI["cf"])
+UI["d0"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["d0"]["Color"] = Color3.fromRGB(100, 100, 100)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.1.Frame 11.Frame 10 \\ --
+UI["d1"] = Instance.new("Frame", UI["cf"])
+UI["d1"]["BorderSizePixel"] = 0
+UI["d1"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d1"]["Size"] = UDim2.new(0.71429, 0, 0.71429, 0)
+UI["d1"]["Position"] = UDim2.new(0.14286, 0, 0.14286, 0)
+UI["d1"]["Name"] = [[Frame 10]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.1.Frame 11.Frame 10.UIGradient \\ --
+UI["d2"] = Instance.new("UIGradient", UI["d1"])
+UI["d2"]["Rotation"] = 359.36499
+UI["d2"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.1.Frame 11.Frame 10.UICorner \\ --
+UI["d3"] = Instance.new("UICorner", UI["d1"])
+UI["d3"]["CornerRadius"] = UDim.new(0, 10)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.1.Frame 11.UICorner \\ --
+UI["d4"] = Instance.new("UICorner", UI["cf"])
+UI["d4"]["CornerRadius"] = UDim.new(0, 10)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.2 \\ --
+UI["d5"] = Instance.new("Frame", UI["c9"])
+UI["d5"]["BorderSizePixel"] = 0
+UI["d5"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["d5"]["Size"] = UDim2.new(0.32102, 0, 1, 0)
+UI["d5"]["Position"] = UDim2.new(0.40625, 0, 0, 0)
+UI["d5"]["Name"] = [[2]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.2.Game Settings \\ --
+UI["d6"] = Instance.new("TextLabel", UI["d5"])
+UI["d6"]["TextWrapped"] = true
+UI["d6"]["BorderSizePixel"] = 0
+UI["d6"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["d6"]["TextScaled"] = true
+UI["d6"]["TextSize"] = 10
+UI["d6"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["d6"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["d6"]["BackgroundTransparency"] = 1
+UI["d6"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+UI["d6"]["Size"] = UDim2.new(0.646, 0, 0.6, 0)
+UI["d6"]["Text"] = [[Game Settings]]
+UI["d6"]["Name"] = [[Game Settings]]
+UI["d6"]["Position"] = UDim2.new(0.4, 0, 0.5, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.2.UIStroke \\ --
+UI["d7"] = Instance.new("UIStroke", UI["d5"])
+UI["d7"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.2.UIStroke.UIGradient \\ --
+UI["d8"] = Instance.new("UIGradient", UI["d7"])
+UI["d8"]["Rotation"] = 359.36499
+UI["d8"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.2.UICorner \\ --
+UI["d9"] = Instance.new("UICorner", UI["d5"])
+UI["d9"]["CornerRadius"] = UDim.new(0, 9)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.2.Frame 11 \\ --
+UI["da"] = Instance.new("TextButton", UI["d5"])
+UI["da"]["BorderSizePixel"] = 0
+UI["da"]["AutoButtonColor"] = false
+UI["da"]["TextSize"] = 14
+UI["da"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["da"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["da"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["da"]["Size"] = UDim2.new(0.124, 0, 0.667, 0)
+UI["da"]["Name"] = [[Frame 11]]
+UI["da"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["da"]["Text"] = [[]]
+UI["da"]["Position"] = UDim2.new(0.805, 0, 0.143, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.2.Frame 11.UIStroke \\ --
+UI["db"] = Instance.new("UIStroke", UI["da"])
+UI["db"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["db"]["Color"] = Color3.fromRGB(100, 100, 100)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.2.Frame 11.Frame 10 \\ --
+UI["dc"] = Instance.new("Frame", UI["da"])
+UI["dc"]["BorderSizePixel"] = 0
+UI["dc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["dc"]["Size"] = UDim2.new(0.71429, 0, 0.71429, 0)
+UI["dc"]["Position"] = UDim2.new(0.14286, 0, 0.14286, 0)
+UI["dc"]["Name"] = [[Frame 10]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.2.Frame 11.Frame 10.UIGradient \\ --
+UI["dd"] = Instance.new("UIGradient", UI["dc"])
+UI["dd"]["Rotation"] = 359.36499
+UI["dd"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.2.Frame 11.Frame 10.UICorner \\ --
+UI["de"] = Instance.new("UICorner", UI["dc"])
+UI["de"]["CornerRadius"] = UDim.new(0, 10)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.2.Frame 11.UICorner \\ --
+UI["df"] = Instance.new("UICorner", UI["da"])
+UI["df"]["CornerRadius"] = UDim.new(0, 10)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.3 \\ --
+UI["e0"] = Instance.new("Frame", UI["c9"])
+UI["e0"]["BorderSizePixel"] = 0
+UI["e0"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["e0"]["Size"] = UDim2.new(0.18466, 0, 1, 0)
+UI["e0"]["Position"] = UDim2.new(0.81534, 0, 0, 0)
+UI["e0"]["Name"] = [[3]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.3.Pages \\ --
+UI["e1"] = Instance.new("TextLabel", UI["e0"])
+UI["e1"]["TextWrapped"] = true
+UI["e1"]["BorderSizePixel"] = 0
+UI["e1"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["e1"]["TextScaled"] = true
+UI["e1"]["TextSize"] = 10
+UI["e1"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["e1"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e1"]["BackgroundTransparency"] = 1
+UI["e1"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+UI["e1"]["Size"] = UDim2.new(0.477, 0, 0.6, 0)
+UI["e1"]["Text"] = [[Pages]]
+UI["e1"]["Name"] = [[Pages]]
+UI["e1"]["Position"] = UDim2.new(0.4, 0, 0.5, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.3.UIStroke \\ --
+UI["e2"] = Instance.new("UIStroke", UI["e0"])
+UI["e2"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.3.UIStroke.UIGradient \\ --
+UI["e3"] = Instance.new("UIGradient", UI["e2"])
+UI["e3"]["Rotation"] = 359.36499
+UI["e3"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.3.UICorner \\ --
+UI["e4"] = Instance.new("UICorner", UI["e0"])
+UI["e4"]["CornerRadius"] = UDim.new(0, 9)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.3.Frame 11 \\ --
+UI["e5"] = Instance.new("TextButton", UI["e0"])
+UI["e5"]["BorderSizePixel"] = 0
+UI["e5"]["AutoButtonColor"] = false
+UI["e5"]["TextSize"] = 14
+UI["e5"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e5"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["e5"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["e5"]["Size"] = UDim2.new(0.21538, 0, 0.667, 0)
+UI["e5"]["Name"] = [[Frame 11]]
+UI["e5"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["e5"]["Text"] = [[]]
+UI["e5"]["Position"] = UDim2.new(0.68836, 0, 0.19469, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.3.Frame 11.UIStroke \\ --
+UI["e6"] = Instance.new("UIStroke", UI["e5"])
+UI["e6"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["e6"]["Color"] = Color3.fromRGB(100, 100, 100)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.3.Frame 11.Frame 10 \\ --
+UI["e7"] = Instance.new("Frame", UI["e5"])
+UI["e7"]["BorderSizePixel"] = 0
+UI["e7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["e7"]["Size"] = UDim2.new(0.71429, 0, 0.71429, 0)
+UI["e7"]["Position"] = UDim2.new(0.14286, 0, 0.14286, 0)
+UI["e7"]["Name"] = [[Frame 10]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.3.Frame 11.Frame 10.UIGradient \\ --
+UI["e8"] = Instance.new("UIGradient", UI["e7"])
+UI["e8"]["Rotation"] = 359.36499
+UI["e8"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.3.Frame 11.Frame 10.UICorner \\ --
+UI["e9"] = Instance.new("UICorner", UI["e7"])
+UI["e9"]["CornerRadius"] = UDim.new(0, 10)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.RadialSettings.3.Frame 11.UICorner \\ --
+UI["ea"] = Instance.new("UICorner", UI["e5"])
+UI["ea"]["CornerRadius"] = UDim.new(0, 10)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.Search \\ --
+UI["eb"] = Instance.new("Frame", UI["c8"])
+UI["eb"]["BorderSizePixel"] = 0
+UI["eb"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["eb"]["Size"] = UDim2.new(0.85227, 0, 0.4717, 0)
+UI["eb"]["Name"] = [[Search]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.Search.imageSearch \\ --
+UI["ec"] = Instance.new("ImageLabel", UI["eb"])
+UI["ec"]["BorderSizePixel"] = 0
+UI["ec"]["Image"] = [[rbxassetid://18460337155]]
+UI["ec"]["Size"] = UDim2.new(0.06333, 0, 0.76, 0)
+UI["ec"]["BackgroundTransparency"] = 1
+UI["ec"]["Name"] = [[imageSearch]]
+UI["ec"]["Position"] = UDim2.new(0.01667, 0, 0.12, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.Search.imageClear \\ --
+UI["ed"] = Instance.new("ImageLabel", UI["eb"])
+UI["ed"]["BorderSizePixel"] = 0
+UI["ed"]["Image"] = [[rbxassetid://18460343366]]
+UI["ed"]["Size"] = UDim2.new(0.07, 0, 0.85, 0)
+UI["ed"]["BackgroundTransparency"] = 1
+UI["ed"]["Name"] = [[imageClear]]
+UI["ed"]["Position"] = UDim2.new(0.90467, 0, 0.06974, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.Search.input \\ --
+UI["ee"] = Instance.new("Frame", UI["eb"])
+UI["ee"]["BorderSizePixel"] = 0
+UI["ee"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["ee"]["Size"] = UDim2.new(0.76459, 0, 0.76, 0)
+UI["ee"]["Position"] = UDim2.new(0.11, 0, 0.12, 0)
+UI["ee"]["Name"] = [[input]]
+UI["ee"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.Search.UIStroke \\ --
+UI["ef"] = Instance.new("UIStroke", UI["eb"])
+UI["ef"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.Search.UIStroke.UIGradient \\ --
+UI["f0"] = Instance.new("UIGradient", UI["ef"])
+UI["f0"]["Rotation"] = 359.36499
+UI["f0"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.Search.UICorner \\ --
+UI["f1"] = Instance.new("UICorner", UI["eb"])
+UI["f1"]["CornerRadius"] = UDim.new(0.36, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.Search.TextBox \\ --
+UI["f2"] = Instance.new("TextBox", UI["eb"])
+UI["f2"]["TextColor3"] = Color3.fromRGB(241, 241, 241)
+UI["f2"]["PlaceholderColor3"] = Color3.fromRGB(101, 101, 101)
+UI["f2"]["BorderSizePixel"] = 0
+UI["f2"]["TextWrapped"] = true
+UI["f2"]["TextSize"] = 14
+UI["f2"]["TextScaled"] = true
+UI["f2"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["f2"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["f2"]["ClearTextOnFocus"] = false
+UI["f2"]["PlaceholderText"] = [[Aimbot Universal]]
+UI["f2"]["Size"] = UDim2.new(0.765, 0, 0.64, 0)
+UI["f2"]["Position"] = UDim2.new(0.11, 0, 0.2, 0)
+UI["f2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f2"]["Text"] = [[]]
+UI["f2"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.FilterDrop \\ --
+UI["f3"] = Instance.new("TextButton", UI["c8"])
+UI["f3"]["BorderSizePixel"] = 0
+UI["f3"]["TextSize"] = 14
+UI["f3"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["f3"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["f3"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["f3"]["Size"] = UDim2.new(0.128, 0, 0.472, 0)
+UI["f3"]["Name"] = [[FilterDrop]]
+UI["f3"]["BorderColor3"] = Color3.fromRGB(15, 15, 15)
+UI["f3"]["Text"] = [[]]
+UI["f3"]["Position"] = UDim2.new(0.872, 0, 0, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.FilterDrop.UICorner \\ --
+UI["f4"] = Instance.new("UICorner", UI["f3"])
+UI["f4"]["CornerRadius"] = UDim.new(0.4, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.FilterDrop.UIStroke \\ --
+UI["f5"] = Instance.new("UIStroke", UI["f3"])
+UI["f5"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["f5"]["Color"] = Color3.fromRGB(100, 100, 100)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.FilterDrop.arrow_drop_down \\ --
+UI["f6"] = Instance.new("Frame", UI["f3"])
+UI["f6"]["BorderSizePixel"] = 0
+UI["f6"]["Size"] = UDim2.new(0.42222, 0, 0.72, 0)
+UI["f6"]["Position"] = UDim2.new(0.51111, 0, 0.12, 0)
+UI["f6"]["Name"] = [[arrow_drop_down]]
+UI["f6"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.FilterDrop.arrow_drop_down.ImageButton \\ --
+UI["f7"] = Instance.new("ImageButton", UI["f6"])
+UI["f7"]["BorderSizePixel"] = 0
+UI["f7"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["f7"]["Image"] = [[rbxassetid://18476185487]]
+UI["f7"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["f7"]["BackgroundTransparency"] = 1
+UI["f7"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.FilterDrop.filter_alt \\ --
+UI["f8"] = Instance.new("Frame", UI["f3"])
+UI["f8"]["BorderSizePixel"] = 0
+UI["f8"]["Size"] = UDim2.new(0.48889, 0, 0.88, 0)
+UI["f8"]["Position"] = UDim2.new(0.11111, 0, 0.04, 0)
+UI["f8"]["Name"] = [[filter_alt]]
+UI["f8"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.TopBar.FilterDrop.filter_alt.filter_alt \\ --
+UI["f9"] = Instance.new("ImageLabel", UI["f8"])
+UI["f9"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+UI["f9"]["Image"] = [[rbxassetid://18476285658]]
+UI["f9"]["Size"] = UDim2.new(0.8, 0, 0.8, 0)
+UI["f9"]["BackgroundTransparency"] = 1
+UI["f9"]["Name"] = [[filter_alt]]
+UI["f9"]["Position"] = UDim2.new(0.5, 0, 0.5, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterShadow \\ --
+UI["fa"] = Instance.new("Folder", UI["c5"])
+UI["fa"]["Name"] = [[FilterShadow]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer \\ --
+UI["fb"] = Instance.new("Frame", UI["c5"])
+UI["fb"]["Visible"] = false
+UI["fb"]["BorderSizePixel"] = 0
+UI["fb"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["fb"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["fb"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["fb"]["Name"] = [[FilterContainer]]
+UI["fb"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.ShadowFilter \\ --
+UI["fc"] = Instance.new("ImageLabel", UI["fb"])
+UI["fc"]["BorderSizePixel"] = 0
+UI["fc"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["fc"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
+UI["fc"]["Image"] = [[rbxassetid://18476955405]]
+UI["fc"]["Size"] = UDim2.new(0.495, 0, 0.287, 0)
+UI["fc"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["fc"]["BackgroundTransparency"] = 1
+UI["fc"]["Name"] = [[ShadowFilter]]
+UI["fc"]["Position"] = UDim2.new(0.83, 0, 0.201, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown \\ --
+UI["fd"] = Instance.new("Frame", UI["fb"])
+UI["fd"]["BorderSizePixel"] = 0
+UI["fd"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["fd"]["Size"] = UDim2.new(0.318, 0, 0.166, 0)
+UI["fd"]["Position"] = UDim2.new(0.68182, 0, 0.11454, 0)
+UI["fd"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["fd"]["Name"] = [[FilterDropDown]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.UICorner \\ --
+UI["fe"] = Instance.new("UICorner", UI["fd"])
+UI["fe"]["CornerRadius"] = UDim.new(0.06, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.UIStroke \\ --
+UI["ff"] = Instance.new("UIStroke", UI["fd"])
+UI["ff"]["Color"] = Color3.fromRGB(100, 100, 100)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.Filter \\ --
+UI["100"] = Instance.new("Frame", UI["fd"])
+UI["100"]["BorderSizePixel"] = 0
+UI["100"]["BackgroundColor3"] = Color3.fromRGB(9, 20, 23)
+UI["100"]["Size"] = UDim2.new(0.9023, 0, 0.19155, 0)
+UI["100"]["Position"] = UDim2.new(0.04467, 0, 0.28732, 0)
+UI["100"]["Name"] = [[Filter]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.Filter.Name \\ --
+UI["101"] = Instance.new("TextLabel", UI["100"])
+UI["101"]["TextWrapped"] = true
+UI["101"]["BorderSizePixel"] = 0
+UI["101"]["TextScaled"] = true
+UI["101"]["TextSize"] = 11
+UI["101"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["101"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["101"]["BackgroundTransparency"] = 1
+UI["101"]["Size"] = UDim2.new(0.426, 0, 0.58, 0)
+UI["101"]["Text"] = [[Name]]
+UI["101"]["Name"] = [[Name]]
+UI["101"]["Position"] = UDim2.new(0.277, 0, 0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.Filter.UIStroke \\ --
+UI["102"] = Instance.new("UIStroke", UI["100"])
+UI["102"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["102"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.Filter.UIStroke.UIGradient \\ --
+UI["103"] = Instance.new("UIGradient", UI["102"])
+UI["103"]["Rotation"] = 359.36499
+UI["103"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.Filter.UICorner \\ --
+UI["104"] = Instance.new("UICorner", UI["100"])
+UI["104"]["CornerRadius"] = UDim.new(0, 7)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.Filter \\ --
+UI["105"] = Instance.new("Frame", UI["fd"])
+UI["105"]["BorderSizePixel"] = 0
+UI["105"]["BackgroundColor3"] = Color3.fromRGB(9, 20, 23)
+UI["105"]["Size"] = UDim2.new(0.9023, 0, 0.19155, 0)
+UI["105"]["Position"] = UDim2.new(0.04467, 0, 0.05746, 0)
+UI["105"]["Name"] = [[Filter]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.Filter.Custom \\ --
+UI["106"] = Instance.new("TextLabel", UI["105"])
+UI["106"]["TextWrapped"] = true
+UI["106"]["BorderSizePixel"] = 0
+UI["106"]["TextScaled"] = true
+UI["106"]["TextSize"] = 11
+UI["106"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["106"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["106"]["BackgroundTransparency"] = 1
+UI["106"]["Size"] = UDim2.new(0.426, 0, 0.58, 0)
+UI["106"]["Text"] = [[Custom]]
+UI["106"]["Name"] = [[Custom]]
+UI["106"]["Position"] = UDim2.new(0.277, 0, 0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.Filter.UIStroke \\ --
+UI["107"] = Instance.new("UIStroke", UI["105"])
+UI["107"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["107"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.Filter.UIStroke.UIGradient \\ --
+UI["108"] = Instance.new("UIGradient", UI["107"])
+UI["108"]["Rotation"] = 359.36499
+UI["108"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.Filter.UICorner \\ --
+UI["109"] = Instance.new("UICorner", UI["105"])
+UI["109"]["CornerRadius"] = UDim.new(0, 7)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.Filter \\ --
+UI["10a"] = Instance.new("Frame", UI["fd"])
+UI["10a"]["BorderSizePixel"] = 0
+UI["10a"]["BackgroundColor3"] = Color3.fromRGB(9, 20, 23)
+UI["10a"]["Size"] = UDim2.new(0.9023, 0, 0.19155, 0)
+UI["10a"]["Position"] = UDim2.new(0.04467, 0, 0.51717, 0)
+UI["10a"]["Name"] = [[Filter]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.Filter.Add-Ons \\ --
+UI["10b"] = Instance.new("TextLabel", UI["10a"])
+UI["10b"]["TextWrapped"] = true
+UI["10b"]["BorderSizePixel"] = 0
+UI["10b"]["TextScaled"] = true
+UI["10b"]["TextSize"] = 11
+UI["10b"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["10b"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["10b"]["BackgroundTransparency"] = 1
+UI["10b"]["Size"] = UDim2.new(0.426, 0, 0.58, 0)
+UI["10b"]["Text"] = [[Add-Ons]]
+UI["10b"]["Name"] = [[Add-Ons]]
+UI["10b"]["Position"] = UDim2.new(0.277, 0, 0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.Filter.UIStroke \\ --
+UI["10c"] = Instance.new("UIStroke", UI["10a"])
+UI["10c"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["10c"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.Filter.UIStroke.UIGradient \\ --
+UI["10d"] = Instance.new("UIGradient", UI["10c"])
+UI["10d"]["Rotation"] = 359.36499
+UI["10d"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.Filter.UICorner \\ --
+UI["10e"] = Instance.new("UICorner", UI["10a"])
+UI["10e"]["CornerRadius"] = UDim.new(0, 7)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.Filter \\ --
+UI["10f"] = Instance.new("Frame", UI["fd"])
+UI["10f"]["BorderSizePixel"] = 0
+UI["10f"]["BackgroundColor3"] = Color3.fromRGB(9, 20, 23)
+UI["10f"]["Size"] = UDim2.new(0.9023, 0, 0.19155, 0)
+UI["10f"]["Position"] = UDim2.new(0.04467, 0, 0.74703, 0)
+UI["10f"]["Name"] = [[Filter]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.Filter.Themes \\ --
+UI["110"] = Instance.new("TextLabel", UI["10f"])
+UI["110"]["TextWrapped"] = true
+UI["110"]["BorderSizePixel"] = 0
+UI["110"]["TextScaled"] = true
+UI["110"]["TextSize"] = 11
+UI["110"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["110"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["110"]["BackgroundTransparency"] = 1
+UI["110"]["Size"] = UDim2.new(0.426, 0, 0.58, 0)
+UI["110"]["Text"] = [[Themes]]
+UI["110"]["Name"] = [[Themes]]
+UI["110"]["Position"] = UDim2.new(0.277, 0, 0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.Filter.UIStroke \\ --
+UI["111"] = Instance.new("UIStroke", UI["10f"])
+UI["111"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["111"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.Filter.UIStroke.UIGradient \\ --
+UI["112"] = Instance.new("UIGradient", UI["111"])
+UI["112"]["Rotation"] = 359.36499
+UI["112"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.FilterContainer.FilterDropDown.Filter.UICorner \\ --
+UI["113"] = Instance.new("UICorner", UI["10f"])
+UI["113"]["CornerRadius"] = UDim.new(0, 7)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container \\ --
+UI["114"] = Instance.new("ScrollingFrame", UI["c5"])
+UI["114"]["Active"] = true
+UI["114"]["BorderSizePixel"] = 0
+UI["114"]["CanvasSize"] = UDim2.new(0, 0, 0, 0)
+UI["114"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["114"]["Name"] = [[Container]]
+UI["114"]["AutomaticCanvasSize"] = Enum.AutomaticSize.Y
+UI["114"]["Size"] = UDim2.new(1, 0, 0.833, 0)
+UI["114"]["ScrollBarImageColor3"] = Color3.fromRGB(100, 100, 100)
+UI["114"]["Position"] = UDim2.new(0, 0, 0.167, 0)
+UI["114"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["114"]["ScrollBarThickness"] = 5
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.UICorner \\ --
+UI["115"] = Instance.new("UICorner", UI["114"])
+UI["115"]["CornerRadius"] = UDim.new(0, 9)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.UIStroke \\ --
+UI["116"] = Instance.new("UIStroke", UI["114"])
+UI["116"]["Color"] = Color3.fromRGB(100, 100, 100)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.UIListLayout \\ --
+UI["117"] = Instance.new("UIListLayout", UI["114"])
+UI["117"]["Padding"] = UDim.new(0.03, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.Z \\ --
+UI["118"] = Instance.new("Frame", UI["114"])
+UI["118"]["BorderSizePixel"] = 0
+UI["118"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["118"]["Size"] = UDim2.new(1, 0, 0.02, 0)
+UI["118"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["118"]["Name"] = [[Z]]
+UI["118"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection \\ --
+UI["119"] = Instance.new("Frame")
+UI["119"]["BorderSizePixel"] = 0
+UI["119"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["119"]["ClipsDescendants"] = true
+UI["119"]["Size"] = UDim2.new(1, 0, 0.07274, 0)
+UI["119"]["Position"] = UDim2.new(0, 0, 0.24093, 0)
+UI["119"]["Name"] = [[SettingSection]]
+UI["119"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container \\ --
+UI["11a"] = Instance.new("Frame", UI["119"])
+UI["11a"]["BorderSizePixel"] = 0
+UI["11a"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["11a"]["AutomaticSize"] = Enum.AutomaticSize.Y
+UI["11a"]["Size"] = UDim2.new(1, 0, 1.8, 0)
+UI["11a"]["Position"] = UDim2.new(0, 0, 0, 0)
+UI["11a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["11a"]["Name"] = [[Container]]
+UI["11a"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.TopBar \\ --
+UI["11b"] = Instance.new("Frame", UI["11a"])
+UI["11b"]["BorderSizePixel"] = 0
+UI["11b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["11b"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["11b"]["Name"] = [[TopBar]]
+UI["11b"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.TopBar.Title \\ --
+UI["11c"] = Instance.new("TextLabel", UI["11b"])
+UI["11c"]["TextWrapped"] = true
+UI["11c"]["BorderSizePixel"] = 0
+UI["11c"]["TextScaled"] = true
+UI["11c"]["TextSize"] = 16
+UI["11c"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["11c"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["11c"]["BackgroundTransparency"] = 1
+UI["11c"]["Size"] = UDim2.new(0.28634, 0, 0.44, 0)
+UI["11c"]["Text"] = [[Key Binds]]
+UI["11c"]["Name"] = [[Title]]
+UI["11c"]["Position"] = UDim2.new(0.10029, 0, 0.23684, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.TopBar.3 \\ --
+UI["11d"] = Instance.new("Frame", UI["11b"])
+UI["11d"]["BorderSizePixel"] = 0
+UI["11d"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["11d"]["Size"] = UDim2.new(0.16046, 0, 0.55263, 0)
+UI["11d"]["Position"] = UDim2.new(0.81948, 0, 0.23684, 0)
+UI["11d"]["Name"] = [[3]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.TopBar.4 \\ --
+UI["11e"] = Instance.new("Frame", UI["11b"])
+UI["11e"]["BorderSizePixel"] = 0
+UI["11e"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["11e"]["Size"] = UDim2.new(0.18338, 0, 0.55263, 0)
+UI["11e"]["Position"] = UDim2.new(0.61891, 0, 0.23684, 0)
+UI["11e"]["Name"] = [[4]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.TopBar.4.#COSTUM \\ --
+UI["11f"] = Instance.new("TextLabel", UI["11e"])
+UI["11f"]["TextWrapped"] = true
+UI["11f"]["BorderSizePixel"] = 0
+UI["11f"]["TextScaled"] = true
+UI["11f"]["TextSize"] = 10
+UI["11f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["11f"]["TextColor3"] = Color3.fromRGB(100, 100, 100)
+UI["11f"]["BackgroundTransparency"] = 1
+UI["11f"]["Size"] = UDim2.new(0.813, 0, 0.6, 0)
+UI["11f"]["Text"] = [[#COSTUM]]
+UI["11f"]["Name"] = [[#COSTUM]]
+UI["11f"]["Position"] = UDim2.new(0.07813, 0, 0.19048, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.TopBar.4.UIStroke \\ --
+UI["120"] = Instance.new("UIStroke", UI["11e"])
+UI["120"]["Color"] = Color3.fromRGB(100, 100, 100)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.TopBar.4.UICorner \\ --
+UI["121"] = Instance.new("UICorner", UI["11e"])
+UI["121"]["CornerRadius"] = UDim.new(0, 5)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.TopBar.Reset \\ --
+UI["122"] = Instance.new("TextButton", UI["11b"])
+UI["122"]["BorderSizePixel"] = 0
+UI["122"]["TextSize"] = 14
+UI["122"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["122"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["122"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["122"]["Size"] = UDim2.new(0.16, 0, 0.553, 0)
+UI["122"]["Name"] = [[Reset]]
+UI["122"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["122"]["Text"] = [[]]
+UI["122"]["Position"] = UDim2.new(0.819, 0, 0.237, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.TopBar.Reset.UICorner \\ --
+UI["123"] = Instance.new("UICorner", UI["122"])
+UI["123"]["CornerRadius"] = UDim.new(0, 9)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.TopBar.Reset.UIStroke \\ --
+UI["124"] = Instance.new("UIStroke", UI["122"])
+UI["124"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["124"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.TopBar.Reset.UIStroke.UIGradient \\ --
+UI["125"] = Instance.new("UIGradient", UI["124"])
+UI["125"]["Rotation"] = 359.36499
+UI["125"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.TopBar.Reset.Frame 12 \\ --
+UI["126"] = Instance.new("ImageLabel", UI["122"])
+UI["126"]["BorderSizePixel"] = 0
+UI["126"]["Image"] = [[rbxassetid://18476073224]]
+UI["126"]["Size"] = UDim2.new(0.26786, 0, 0.71429, 0)
+UI["126"]["BackgroundTransparency"] = 1
+UI["126"]["Name"] = [[Frame 12]]
+UI["126"]["Position"] = UDim2.new(0.10714, 0, 0.14286, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.TopBar.Reset.Reset \\ --
+UI["127"] = Instance.new("TextLabel", UI["122"])
+UI["127"]["TextWrapped"] = true
+UI["127"]["BorderSizePixel"] = 0
+UI["127"]["TextScaled"] = true
+UI["127"]["TextSize"] = 10
+UI["127"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["127"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["127"]["BackgroundTransparency"] = 1
+UI["127"]["Size"] = UDim2.new(0.5, 0, 0.6, 0)
+UI["127"]["Text"] = [[Reset]]
+UI["127"]["Name"] = [[Reset]]
+UI["127"]["Position"] = UDim2.new(0.375, 0, 0.19048, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.TopBar.Drop \\ --
+UI["128"] = Instance.new("ImageButton", UI["11b"])
+UI["128"]["BorderSizePixel"] = 0
+UI["128"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["128"]["Image"] = [[rbxassetid://18476185487]]
+UI["128"]["Size"] = UDim2.new(0.066, 0, 0.6, 0)
+UI["128"]["BackgroundTransparency"] = 1
+UI["128"]["Name"] = [[Drop]]
+UI["128"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["128"]["Position"] = UDim2.new(0.034, 0, 0.18, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.TopBar.Drop.UICorner \\ --
+UI["129"] = Instance.new("UICorner", UI["128"])
+UI["129"]["CornerRadius"] = UDim.new(0, 9)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.TopBar.UIAspectRatioConstraint \\ --
+UI["12a"] = Instance.new("UIAspectRatioConstraint", UI["11b"])
+UI["12a"]["AspectRatio"] = 9.23535
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings \\ --
+UI["12b"] = Instance.new("Frame", UI["11a"])
+UI["12b"]["BorderSizePixel"] = 0
+UI["12b"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["12b"]["AutomaticSize"] = Enum.AutomaticSize.Y
+UI["12b"]["Size"] = UDim2.new(1, 0, 0.45, 0)
+UI["12b"]["Position"] = UDim2.new(0, 0, 0.559, 0)
+UI["12b"]["Name"] = [[Settings]]
+UI["12b"]["BackgroundTransparency"] = 10
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.UIListLayout \\ --
+UI["12c"] = Instance.new("UIListLayout", UI["12b"])
+UI["12c"]["Padding"] = UDim.new(0.25, 0)
+UI["12c"]["SortOrder"] = Enum.SortOrder.LayoutOrder
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting \\ --
+UI["12d"] = Instance.new("Frame", UI["12b"])
+UI["12d"]["BorderSizePixel"] = 0
+UI["12d"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["12d"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["12d"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["12d"]["Name"] = [[Setting]]
+UI["12d"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.Frame 13 \\ --
+UI["12e"] = Instance.new("Frame", UI["12d"])
+UI["12e"]["BorderSizePixel"] = 0
+UI["12e"]["BackgroundColor3"] = Color3.fromRGB(9, 20, 23)
+UI["12e"]["Size"] = UDim2.new(0.68768, 0, 0.83333, 0)
+UI["12e"]["Position"] = UDim2.new(0.02579, 0, 0.1, 0)
+UI["12e"]["Name"] = [[Frame 13]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.Frame 13.SettingName \\ --
+UI["12f"] = Instance.new("TextLabel", UI["12e"])
+UI["12f"]["TextWrapped"] = true
+UI["12f"]["BorderSizePixel"] = 0
+UI["12f"]["TextScaled"] = true
+UI["12f"]["TextSize"] = 13
+UI["12f"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["12f"]["TextColor3"] = Color3.fromRGB(241, 241, 241)
+UI["12f"]["BackgroundTransparency"] = 1
+UI["12f"]["Size"] = UDim2.new(0.85743, 0, 0.6, 0)
+UI["12f"]["Text"] = [[Change Flight State]]
+UI["12f"]["Name"] = [[SettingName]]
+UI["12f"]["Position"] = UDim2.new(0.03333, 0, 0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.Frame 13.Frame 12 \\ --
+UI["130"] = Instance.new("ImageLabel", UI["12e"])
+UI["130"]["BorderSizePixel"] = 0
+UI["130"]["Image"] = [[rbxassetid://18476073224]]
+UI["130"]["Size"] = UDim2.new(0.0625, 0, 0.6, 0)
+UI["130"]["BackgroundTransparency"] = 1
+UI["130"]["Name"] = [[Frame 12]]
+UI["130"]["Position"] = UDim2.new(0.90417, 0, 0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.Frame 13.UIStroke \\ --
+UI["131"] = Instance.new("UIStroke", UI["12e"])
+UI["131"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.Frame 13.UIStroke.UIGradient \\ --
+UI["132"] = Instance.new("UIGradient", UI["131"])
+UI["132"]["Rotation"] = 359.36499
+UI["132"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.Frame 13.UICorner \\ --
+UI["133"] = Instance.new("UICorner", UI["12e"])
+UI["133"]["CornerRadius"] = UDim.new(0, 9)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.KeySelection \\ --
+UI["134"] = Instance.new("TextButton", UI["12d"])
+UI["134"]["BorderSizePixel"] = 0
+UI["134"]["TextSize"] = 14
+UI["134"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["134"]["BackgroundColor3"] = Color3.fromRGB(9, 20, 23)
+UI["134"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["134"]["Size"] = UDim2.new(0.212, 0, 0.83, 0)
+UI["134"]["Name"] = [[KeySelection]]
+UI["134"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["134"]["Text"] = [[]]
+UI["134"]["Position"] = UDim2.new(0.765, 0, 0.1, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.KeySelection.UICorner \\ --
+UI["135"] = Instance.new("UICorner", UI["134"])
+UI["135"]["CornerRadius"] = UDim.new(0, 9)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.KeySelection.UIStroke \\ --
+UI["136"] = Instance.new("UIStroke", UI["134"])
+UI["136"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["136"]["Color"] = Color3.fromRGB(100, 100, 100)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.KeySelection.Key \\ --
+UI["137"] = Instance.new("TextLabel", UI["134"])
+UI["137"]["TextWrapped"] = true
+UI["137"]["BorderSizePixel"] = 0
+UI["137"]["TextScaled"] = true
+UI["137"]["TextSize"] = 13
+UI["137"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["137"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["137"]["BackgroundTransparency"] = 1
+UI["137"]["Size"] = UDim2.new(0.135, 0, 0.6, 0)
+UI["137"]["Text"] = [[X]]
+UI["137"]["Name"] = [[Key]]
+UI["137"]["Position"] = UDim2.new(0.7027, 0, 0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.KeySelection.Key.UIGradient \\ --
+UI["138"] = Instance.new("UIGradient", UI["137"])
+UI["138"]["Rotation"] = 359.36499
+UI["138"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.KeySelection.KeyTitle \\ --
+UI["139"] = Instance.new("TextLabel", UI["134"])
+UI["139"]["TextWrapped"] = true
+UI["139"]["BorderSizePixel"] = 0
+UI["139"]["TextScaled"] = true
+UI["139"]["TextSize"] = 13
+UI["139"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["139"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["139"]["BackgroundTransparency"] = 1
+UI["139"]["Size"] = UDim2.new(0.378, 0, 0.6, 0)
+UI["139"]["Text"] = [[Key:]]
+UI["139"]["Name"] = [[KeyTitle]]
+UI["139"]["Position"] = UDim2.new(0.14865, 0, 0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.UIAspectRatioConstraint \\ --
+UI["13a"] = Instance.new("UIAspectRatioConstraint", UI["12d"])
+UI["13a"]["AspectRatio"] = 11.54419
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting \\ --
+UI["13b"] = Instance.new("Frame", UI["12b"])
+UI["13b"]["BorderSizePixel"] = 0
+UI["13b"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["13b"]["Size"] = UDim2.new(1, 0, 1, 0)
+UI["13b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["13b"]["Name"] = [[Setting]]
+UI["13b"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.Frame 13 \\ --
+UI["13c"] = Instance.new("Frame", UI["13b"])
+UI["13c"]["BorderSizePixel"] = 0
+UI["13c"]["BackgroundColor3"] = Color3.fromRGB(9, 20, 23)
+UI["13c"]["Size"] = UDim2.new(0.68768, 0, 0.83333, 0)
+UI["13c"]["Position"] = UDim2.new(0.02579, 0, 0.1, 0)
+UI["13c"]["Name"] = [[Frame 13]]
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.Frame 13.SettingName \\ --
+UI["13d"] = Instance.new("TextLabel", UI["13c"])
+UI["13d"]["TextWrapped"] = true
+UI["13d"]["BorderSizePixel"] = 0
+UI["13d"]["TextScaled"] = true
+UI["13d"]["TextSize"] = 13
+UI["13d"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["13d"]["TextColor3"] = Color3.fromRGB(241, 241, 241)
+UI["13d"]["BackgroundTransparency"] = 1
+UI["13d"]["Size"] = UDim2.new(0.85743, 0, 0.6, 0)
+UI["13d"]["Text"] = [[Change Flight State]]
+UI["13d"]["Name"] = [[SettingName]]
+UI["13d"]["Position"] = UDim2.new(0.03333, 0, 0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.Frame 13.Frame 12 \\ --
+UI["13e"] = Instance.new("ImageLabel", UI["13c"])
+UI["13e"]["BorderSizePixel"] = 0
+UI["13e"]["Image"] = [[rbxassetid://18476073224]]
+UI["13e"]["Size"] = UDim2.new(0.0625, 0, 0.6, 0)
+UI["13e"]["BackgroundTransparency"] = 1
+UI["13e"]["Name"] = [[Frame 12]]
+UI["13e"]["Position"] = UDim2.new(0.90417, 0, 0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.Frame 13.UIStroke \\ --
+UI["13f"] = Instance.new("UIStroke", UI["13c"])
+UI["13f"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.Frame 13.UIStroke.UIGradient \\ --
+UI["140"] = Instance.new("UIGradient", UI["13f"])
+UI["140"]["Rotation"] = 359.36499
+UI["140"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.Frame 13.UICorner \\ --
+UI["141"] = Instance.new("UICorner", UI["13c"])
+UI["141"]["CornerRadius"] = UDim.new(0, 9)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.KeySelection \\ --
+UI["142"] = Instance.new("TextButton", UI["13b"])
+UI["142"]["BorderSizePixel"] = 0
+UI["142"]["TextSize"] = 14
+UI["142"]["TextColor3"] = Color3.fromRGB(0, 0, 0)
+UI["142"]["BackgroundColor3"] = Color3.fromRGB(9, 20, 23)
+UI["142"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["142"]["Size"] = UDim2.new(0.212, 0, 0.83, 0)
+UI["142"]["Name"] = [[KeySelection]]
+UI["142"]["BorderColor3"] = Color3.fromRGB(0, 0, 0)
+UI["142"]["Text"] = [[]]
+UI["142"]["Position"] = UDim2.new(0.765, 0, 0.1, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.KeySelection.UICorner \\ --
+UI["143"] = Instance.new("UICorner", UI["142"])
+UI["143"]["CornerRadius"] = UDim.new(0, 9)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.KeySelection.UIStroke \\ --
+UI["144"] = Instance.new("UIStroke", UI["142"])
+UI["144"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border
+UI["144"]["Color"] = Color3.fromRGB(100, 100, 100)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.KeySelection.Key \\ --
+UI["145"] = Instance.new("TextLabel", UI["142"])
+UI["145"]["TextWrapped"] = true
+UI["145"]["BorderSizePixel"] = 0
+UI["145"]["TextScaled"] = true
+UI["145"]["TextSize"] = 13
+UI["145"]["FontFace"] = Font.new([[rbxasset://fonts/families/FredokaOne.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["145"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["145"]["BackgroundTransparency"] = 1
+UI["145"]["Size"] = UDim2.new(0.135, 0, 0.6, 0)
+UI["145"]["Text"] = [[X]]
+UI["145"]["Name"] = [[Key]]
+UI["145"]["Position"] = UDim2.new(0.7027, 0, 0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.KeySelection.Key.UIGradient \\ --
+UI["146"] = Instance.new("UIGradient", UI["145"])
+UI["146"]["Rotation"] = 359.36499
+UI["146"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.KeySelection.KeyTitle \\ --
+UI["147"] = Instance.new("TextLabel", UI["142"])
+UI["147"]["TextWrapped"] = true
+UI["147"]["BorderSizePixel"] = 0
+UI["147"]["TextScaled"] = true
+UI["147"]["TextSize"] = 13
+UI["147"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["147"]["TextColor3"] = Color3.fromRGB(255, 255, 255)
+UI["147"]["BackgroundTransparency"] = 1
+UI["147"]["Size"] = UDim2.new(0.378, 0, 0.6, 0)
+UI["147"]["Text"] = [[Key:]]
+UI["147"]["Name"] = [[KeyTitle]]
+UI["147"]["Position"] = UDim2.new(0.14865, 0, 0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.Settings.Setting.UIAspectRatioConstraint \\ --
+UI["148"] = Instance.new("UIAspectRatioConstraint", UI["13b"])
+UI["148"]["AspectRatio"] = 11.54419
+
+-- // StarterGui.UniqueMenu_V-2.Frame.Pages.Settings.Container.SettingSection.Container.UIAspectRatioConstraint \\ --
+UI["149"] = Instance.new("UIAspectRatioConstraint", UI["11a"])
+UI["149"]["AspectRatio"] = 5.13075
+
+-- // StarterGui.UniqueMenu_V-2.Bckup \\ --
+UI["14a"] = Instance.new("Folder", UI["1"])
+UI["14a"]["Name"] = [[Bckup]]
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn \\ --
+UI["14b"] = Instance.new("Frame", UI["14a"])
+UI["14b"]["Visible"] = false
+UI["14b"]["BorderSizePixel"] = 0
+UI["14b"]["BackgroundColor3"] = Color3.fromRGB(9, 20, 23)
+UI["14b"]["Size"] = UDim2.new(0.955, 0, 1, 0)
+UI["14b"]["Position"] = UDim2.new(0.02868, 0, 0, 0)
+UI["14b"]["Name"] = [[TemplateAddOn]]
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.Frame 7 \\ --
+UI["14c"] = Instance.new("ImageLabel", UI["14b"])
+UI["14c"]["BorderSizePixel"] = 0
+UI["14c"]["Image"] = [[rbxassetid://18460426236]]
+UI["14c"]["Size"] = UDim2.new(0.16369, 0, 0.55, 0)
+UI["14c"]["BackgroundTransparency"] = 1
+UI["14c"]["Name"] = [[Frame 7]]
+UI["14c"]["Position"] = UDim2.new(0.02679, 0, 0.09, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.Frame 7.UIStroke \\ --
+UI["14d"] = Instance.new("UIStroke", UI["14c"])
+UI["14d"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.Frame 7.UIStroke.UIGradient \\ --
+UI["14e"] = Instance.new("UIGradient", UI["14d"])
+UI["14e"]["Rotation"] = 359.36499
+UI["14e"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.Frame 7.UICorner \\ --
+UI["14f"] = Instance.new("UICorner", UI["14c"])
+UI["14f"]["CornerRadius"] = UDim.new(0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.Aimbot \\ --
+UI["150"] = Instance.new("TextLabel", UI["14b"])
+UI["150"]["TextWrapped"] = true
+UI["150"]["BorderSizePixel"] = 0
+UI["150"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["150"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["150"]["TextScaled"] = true
+UI["150"]["TextSize"] = 14
+UI["150"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["150"]["TextColor3"] = Color3.fromRGB(241, 241, 241)
+UI["150"]["BackgroundTransparency"] = 1
+UI["150"]["Size"] = UDim2.new(0.44, 0, 0.14, 0)
+UI["150"]["Text"] = [[Aimbot]]
+UI["150"]["Name"] = [[Aimbot]]
+UI["150"]["Position"] = UDim2.new(0.22321, 0, 0.09, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.Creator \\ --
+UI["151"] = Instance.new("TextLabel", UI["14b"])
+UI["151"]["TextWrapped"] = true
+UI["151"]["BorderSizePixel"] = 0
+UI["151"]["TextXAlignment"] = Enum.TextXAlignment.Right
+UI["151"]["TextScaled"] = true
+UI["151"]["TextSize"] = 10
+UI["151"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["151"]["TextColor3"] = Color3.fromRGB(100, 100, 100)
+UI["151"]["BackgroundTransparency"] = 1
+UI["151"]["Size"] = UDim2.new(0.208, 0, 0.12, 0)
+UI["151"]["Text"] = [[@Joe_0815]]
+UI["151"]["Name"] = [[Creator]]
+UI["151"]["Position"] = UDim2.new(0.75, 0, 0.1, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.Decription \\ --
+UI["152"] = Instance.new("TextLabel", UI["14b"])
+UI["152"]["TextWrapped"] = true
+UI["152"]["BorderSizePixel"] = 0
+UI["152"]["TextXAlignment"] = Enum.TextXAlignment.Left
+UI["152"]["TextYAlignment"] = Enum.TextYAlignment.Top
+UI["152"]["TextScaled"] = true
+UI["152"]["TextSize"] = 10
+UI["152"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["152"]["TextColor3"] = Color3.fromRGB(100, 100, 100)
+UI["152"]["BackgroundTransparency"] = 1
+UI["152"]["Size"] = UDim2.new(0.71726, 0, 0.29, 0)
+UI["152"]["Text"] = [[Adds a simple aim area to your mouse to hit your opponent every time]]
+UI["152"]["Name"] = [[Decription]]
+UI["152"]["Position"] = UDim2.new(0.22321, 0, 0.32, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.Decription.UITextSizeConstraint \\ --
+UI["153"] = Instance.new("UITextSizeConstraint", UI["152"])
+UI["153"]["MaxTextSize"] = 12
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.BottomBar \\ --
+UI["154"] = Instance.new("Frame", UI["14b"])
+UI["154"]["BorderSizePixel"] = 0
+UI["154"]["BackgroundColor3"] = Color3.fromRGB(0, 0, 0)
+UI["154"]["Size"] = UDim2.new(0.93155, 0, 0.2, 0)
+UI["154"]["Position"] = UDim2.new(0.02679, 0, 0.7, 0)
+UI["154"]["Name"] = [[BottomBar]]
+UI["154"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.BottomBar.Frame 8 \\ --
+UI["155"] = Instance.new("Frame", UI["154"])
+UI["155"]["BorderSizePixel"] = 0
+UI["155"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["155"]["Size"] = UDim2.new(0.78275, 0, 1, 0)
+UI["155"]["Name"] = [[Frame 8]]
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.BottomBar.Frame 8.Insert \\ --
+UI["156"] = Instance.new("TextLabel", UI["155"])
+UI["156"]["TextWrapped"] = true
+UI["156"]["BorderSizePixel"] = 0
+UI["156"]["TextScaled"] = true
+UI["156"]["TextSize"] = 12
+UI["156"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+UI["156"]["TextColor3"] = Color3.fromRGB(241, 241, 241)
+UI["156"]["BackgroundTransparency"] = 1
+UI["156"]["Size"] = UDim2.new(0.706, 0, 0.7, 0)
+UI["156"]["Text"] = [[Insert]]
+UI["156"]["Name"] = [[Insert]]
+UI["156"]["Position"] = UDim2.new(0.14694, 0, 0.15, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.BottomBar.Frame 8.UIGradient \\ --
+UI["157"] = Instance.new("UIGradient", UI["155"])
+UI["157"]["Rotation"] = 359.36499
+UI["157"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.BottomBar.Frame 8.UICorner \\ --
+UI["158"] = Instance.new("UICorner", UI["155"])
+UI["158"]["CornerRadius"] = UDim.new(0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.BottomBar.Frame 9 \\ --
+UI["159"] = Instance.new("Frame", UI["154"])
+UI["159"]["BorderSizePixel"] = 0
+UI["159"]["BackgroundColor3"] = Color3.fromRGB(15, 15, 15)
+UI["159"]["Size"] = UDim2.new(0.1853, 0, 1, 0)
+UI["159"]["Position"] = UDim2.new(0.8147, 0, 0, 0)
+UI["159"]["Name"] = [[Frame 9]]
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.BottomBar.Frame 9.2.1 \\ --
+UI["15a"] = Instance.new("TextLabel", UI["159"])
+UI["15a"]["TextWrapped"] = true
+UI["15a"]["BorderSizePixel"] = 0
+UI["15a"]["TextScaled"] = true
+UI["15a"]["TextSize"] = 10
+UI["15a"]["FontFace"] = Font.new([[rbxasset://fonts/families/Inter.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal)
+UI["15a"]["TextColor3"] = Color3.fromRGB(241, 241, 241)
+UI["15a"]["BackgroundTransparency"] = 1
+UI["15a"]["Size"] = UDim2.new(0.293, 0, 0.65, 0)
+UI["15a"]["Text"] = [[2.1]]
+UI["15a"]["Name"] = [[2.1]]
+UI["15a"]["Position"] = UDim2.new(0.48276, 0, 0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.BottomBar.Frame 9.update \\ --
+UI["15b"] = Instance.new("Frame", UI["159"])
+UI["15b"]["BorderSizePixel"] = 0
+UI["15b"]["Size"] = UDim2.new(0.25862, 0, 0.75, 0)
+UI["15b"]["Position"] = UDim2.new(0.06897, 0, 0.15, 0)
+UI["15b"]["Name"] = [[update]]
+UI["15b"]["BackgroundTransparency"] = 1
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.BottomBar.Frame 9.update.update \\ --
+UI["15c"] = Instance.new("ImageLabel", UI["15b"])
+UI["15c"]["Image"] = [[undefined]]
+UI["15c"]["Size"] = UDim2.new(0.73333, 0, 0.73333, 0)
+UI["15c"]["BackgroundTransparency"] = 1
+UI["15c"]["Name"] = [[update]]
+UI["15c"]["Position"] = UDim2.new(0.13333, 0, 0.13333, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.BottomBar.Frame 9.UIStroke \\ --
+UI["15d"] = Instance.new("UIStroke", UI["159"])
+UI["15d"]["Color"] = Color3.fromRGB(100, 100, 100)
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.BottomBar.Frame 9.UICorner \\ --
+UI["15e"] = Instance.new("UICorner", UI["159"])
+UI["15e"]["CornerRadius"] = UDim.new(0.2, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.UIStroke \\ --
+UI["15f"] = Instance.new("UIStroke", UI["14b"])
+UI["15f"]["Color"] = Color3.fromRGB(255, 255, 255)
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.UIStroke.UIGradient \\ --
+UI["160"] = Instance.new("UIGradient", UI["15f"])
+UI["160"]["Rotation"] = 359.36499
+UI["160"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(144, 57, 255)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(88, 84, 246))}
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.UICorner \\ --
+UI["161"] = Instance.new("UICorner", UI["14b"])
+UI["161"]["CornerRadius"] = UDim.new(0.09, 0)
+
+-- // StarterGui.UniqueMenu_V-2.Bckup.TemplateAddOn.UIAspectRatioConstraint \\ --
+UI["162"] = Instance.new("UIAspectRatioConstraint", UI["14b"])
+UI["162"]["AspectRatio"] = 3.3272
+
+UI["163"] = Instance.new("Frame", UI["c5"])
+UI["163"]["ZIndex"] = 2
+UI["163"]["BorderSizePixel"] = 0
+UI["163"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
+UI["163"]["Size"] = UDim2.new(1.12784, 0, 0.15262, 0)
+UI["163"]["Position"] = UDim2.new(-0.0625, 0, 0.87758, 0)
+UI["163"]["Name"] = [[Shadow]]
+
+UI["164"] = Instance.new("UIGradient", UI["163"])
+UI["164"]["Rotation"] = 270
+UI["164"]["Transparency"] = NumberSequence.new{NumberSequenceKeypoint.new(0.000, 0),NumberSequenceKeypoint.new(0.625, 0.29),NumberSequenceKeypoint.new(1.000, 1)}
+UI["164"]["Color"] = ColorSequence.new{ColorSequenceKeypoint.new(0.000, Color3.fromRGB(0, 0, 0)),ColorSequenceKeypoint.new(0.625, Color3.fromRGB(20, 20, 20)),ColorSequenceKeypoint.new(1.000, Color3.fromRGB(20, 20, 20))}
+
+return UI
