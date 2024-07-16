@@ -1,5 +1,5 @@
 
-local UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/ScripterCarft/LX-Menu/main/LXMenuUI.luau"))()
+local UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/ScripterCarft/LXMENUTEST/main/LXMenuUI"))()
 
 
 local dragger = UI["5"]
